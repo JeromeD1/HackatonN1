@@ -9,16 +9,17 @@ import "./App.css";
 
 function App() {
 
-  // const [peoples, setPeoples] = useState([]);
-  
-  // useEffect(() => {
-  //   fetch("https://miadil.github.io/starwars-api/api/all.json")
-  //     .then((res) => res.json())
-  //     .then((res) => console.log(res) || setPeoples(res));
-  // }, []);
+
 
   return (
     <>
+
+
+    {/* <Home /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/characters" element={<Characters />} /> */}
+      </Routes>
 
     <div className="app" > 
       
@@ -26,6 +27,7 @@ function App() {
       <Footer />
 
       </div>
+
     </>
   );
 }
