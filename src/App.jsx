@@ -10,7 +10,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 //TEST LOGINFORM
-// import LoginForm from "./components/Loginform";
+import LoginForm from "./components/Loginform";
 import './components/Loginform.css';
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
     <div className="app">
 
     <Header />
-    <Home />
-    <LoginForm/>
+    {/* <Home /> */}
+    {/* <LoginForm/> */}
       <Routes>
         <Route path="/" element={<Home />} />
 
