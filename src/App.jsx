@@ -1,17 +1,48 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import {useState, useEffect} from 'react'
+import "./App.scss";
+
 import Home from "./screens/Home";
 
-import "./App.css";
+import CharacterCardsList from "./screens/CharacterCardsList";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Swipe from "./components/Swipe/PageSwipe";
+import Tchat from "./components/Tchat/Tchat";
+
+//TEST LOGINFORM
+import LoginForm from "./components/Loginform";
+import './components/Loginform.css';
 
 function App() {
+
   return (
     <>
-      <Header />
+    <div className="app">
+
+    <Header />
+    <Home />
+    <LoginForm/>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/characters" element={<Characters />} /> */}
+        <Route path="/Swipe" element={<Swipe />} />
+        <Route path="/Tchat" element={<Tchat />} />
+
+
+
+
+        {/* <Route path="/characters" element={<CharacterCardsList />} />   */}
+      
+      {/* <CharacterCardsList/> */}
+    
+
       </Routes>
+      <Footer />
+
+    </div>
+
+
     </>
   );
 }
