@@ -21,14 +21,13 @@ function App() {
     <>
     <div className="app">
 
-    <Header />
-    <Home />
-    <LoginForm/>
+    
+   
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Swipe" element={<Swipe />} />
-        <Route path="/Tchat" element={<Tchat />} />
-
+        <Route path="/swipe" element={<Swipe />} />
+        <Route path="/tchat" element={<Tchat />} />
+        </Routes>
 
 
 
@@ -37,8 +36,8 @@ function App() {
       {/* <CharacterCardsList/> */}
     
 
-      </Routes>
-      <Footer />
+      
+      {/* <Footer /> */}
 
     </div>
 

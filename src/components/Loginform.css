@@ -1,23 +1,31 @@
 .form-global {
     display: flex;
     justify-content: flex-end;
-    margin-right: 8vw;
-    margin-top: 4rem;
+    /* margin-right: 8vw;
+    margin-top: 4rem; */
+    height:50vh;
+    width:28vw;
+    margin-left: 55%;
+    margin-top:20vh;
+    
 }
 
 .form-style{
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width: var(--widthFormulaireHome);
+    height: 100%;
+    width:100%;
+    /* width: var(--widthFormulaireHome); */
     justify-content: right;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width: var(--widthFormulaireHome);
+    height:100%;
+    width:100%;
+    /* height: 500px; */
+    /* width: var(--widthFormulaireHome); */
     align-items: center;
     border: #AE4199 2px solid;
     border-radius: 10px;
