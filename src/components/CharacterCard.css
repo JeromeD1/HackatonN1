@@ -1,6 +1,6 @@
 .boxCard{
-    width: 55vw;
-    height:85vh;
+    width: 65em;
+    height:60em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -46,9 +46,12 @@ figcaption {
 }
 
 .notFavorite {
+    width:200px;
+    height: 350px;
     background-image: url('../assets/coeur-vide.png');
+    /* background-size: cover;
+    background-position: center; */
     background-size: contain;
    background-repeat: no-repeat;
     width: 50px;
     height: 50px;
-}
