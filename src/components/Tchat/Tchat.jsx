@@ -1,5 +1,9 @@
 import "./Tchat.scss"
 
+import Matchs from "./Matchs/Matchs"
+import MatchProfile from "./MatchProfile/MatchProfile";
+import TchatArea from "./TchatArea/TchatArea";
+
 function Tchat() {
 
 
@@ -7,19 +11,9 @@ function Tchat() {
 
         <section className="main-tchat">
 
-            <section className="container-matchs">
-                <div className="wrap-matchs"></div>
-            </section>
-
-            <section className="container-tchat">
-                <div className="tchat-history-match"></div>
-                <div className="tchat-messages"></div>
-                <div className="tchat-input"></div>
-            </section>
-
-            <section className="container-description">
-                <div className="description-match"></div>
-            </section>
+           <Matchs/>
+           <TchatArea/>
+           <MatchProfile/>
 
 
         </section>
@@ -33,3 +27,19 @@ function Tchat() {
 }
 
 export default Tchat;
+
+
+
+{/* <section className="container-matchs">
+<div className="wrap-matchs"></div>
+</section>
+
+<section className="container-tchat">
+<div className="tchat-history-match"></div>
+<div className="tchat-messages"></div>
+<div className="tchat-input"></div>
+</section>
+
+<section className="container-description">
+<div className="description-match"></div>
+</section> */}

@@ -9,7 +9,6 @@ function Match() {
 
         <section className="Container-matchs">
            
-            
             <div className="matchs-profile">
                 <div className="wrap-img">
                     <img src="https://radiodisneyclub.fr/wp-content/uploads/2019/06/Jar-Jar-Binks-in-Star-Wars-700x368.jpg" 
@@ -19,6 +18,7 @@ function Match() {
             </div>
 
             <div className="matchs-title">
+                <span> Messages </span>                      
             </div>
             <div className="matchs-miniCards">
               <MiniCard_match/>

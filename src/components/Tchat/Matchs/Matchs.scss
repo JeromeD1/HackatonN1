@@ -1,4 +1,4 @@
-
+$font-family-content : 'Segoe UI' , sans-serif;
 
 .Container-matchs {
     width: 30vw;
@@ -8,7 +8,7 @@
     box-sizing: border-box;
     background: rgb(174,65,153);
     background: radial-gradient(circle, rgba(174,65,153,1) 0%, rgba(252,70,107,1) 100%);
-
+    font-family:$font-family-content;
   
     
 
@@ -22,6 +22,7 @@
         font-size: 2rem;
         align-items: center;
         justify-content: center;
+        
 
         .wrap-img{
         box-sizing: border-box;
@@ -35,6 +36,7 @@
             height:100%;
             width:100%;
             border-radius: 50%;
+            border:3px solid white;
         }
     }
     
@@ -42,7 +44,14 @@
 
     .matchs-title {
     width:100%;
-    height: 5%;
+    height: 3%;
+    color:white;
+    font-size:1.2rem;
+    font-weight: 500;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    background-color: rgba(219, 219, 219, 0.364);
 
     }
 

@@ -19,44 +19,9 @@ $screen-width: 900px;
 .main-tchat{
 
     display:flex;
-    background-color: grey;
-    height:20vh;
-
-    .container-matchs{
-
-
-        .wrap-matchs{
-
-
-        }
-    }
-
-
-
-    .container-tchat{
-
-        .tchat-history-match{
-
-        }
-
-        .tchat-messages{
-
-        }
-
-        .tchat-input{
-
-
-        }
-
-    }
-
-    .container-description{
-
-        .description-match{
-
-
-        }
-    }
-
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width:100%;
 
 }

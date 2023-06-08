@@ -5,7 +5,8 @@ import Home from "./screens/Home";
 
 // Essais
 import Tchat from "./components/Tchat/Tchat"
-import Matchs from "./components/Matchs"
+import Matchs from "./components/Tchat/Matchs/Matchs"
+import MatchProfile from "./components/Tchat/MatchProfile/MatchProfile"
 
 import "./App.css";
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <>
       {/* <Header /> */}
-      <Matchs />
+      <Tchat />
       {/* <Routes> */}
         {/* <Route path="/" element={<Home />} /> */}
         {/* <Route path="/characters" element={<Characters />} /> */}
