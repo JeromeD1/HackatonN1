@@ -20,7 +20,6 @@ const CharacterCard = ({people}) => {
         <section>
             <button>Précedent</button>
             <button>Suivant</button>
-            <p></p>
         </section>
         </>
     )
