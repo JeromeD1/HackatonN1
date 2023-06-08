@@ -26,24 +26,21 @@ function App() {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-
-      <Header />
-    <Home />
-      {/* <Routes>
+      
+      {/* <Header />
+      <Home />
+      <Routes>
         <Route path="/" element={<Home />} />
 
-        {/* <Route path="/characters" element={<Characters />} /> */}
+      <Route path="/characters" element={<Characters />} /> 
+        <CharacterCardsList/>
+      <Route path="/characters" element={<Characters />}/>
       </Routes>
+      <LoginForm/>
+      <Footer /> */}
       <CharacterCardsList/>
 
-        {/* <Route path="/characters" element={<Characters />}
-      {</Routes> */}
-
-      <LoginForm/>
-      <Footer />
-
     </div>
-
     </>
   );
 }
