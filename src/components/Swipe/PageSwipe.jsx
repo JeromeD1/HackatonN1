@@ -8,9 +8,9 @@ function PageSwipe() {
     return (
 
         <section class="PageSwipe">
-            <div className="navbar">
+            {/* <div className="navbar">
                 <Header/>
-            </div>
+            </div> */}
 
             <div className="wrap-content">
 

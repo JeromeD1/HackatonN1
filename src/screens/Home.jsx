@@ -1,9 +1,13 @@
 import {useState, useEffect} from 'react'
 import "./Home.scss"
 
-import LoginForm from '../components/Loginform';
+
 
 import FilterFormulaire from '../components/FilterFormulaire';
+
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import LoginForm from '../components/Loginform';
 
 
 const Home = () => {
@@ -11,7 +15,7 @@ const Home = () => {
     const [peoples, setPeoples] = useState([]);
 
     useEffect(() => {
-      fetch("https://miadil.github.io/starwars-api/api/all.json%22")
+      fetch("https://miadil.github.io/starwars-api/api/all.json")
         .then((res) => res.json())
         .then((res) => console.log(res) || setPeoples(res));
     }, []);
@@ -19,19 +23,24 @@ const Home = () => {
 
   return (
   <>
-    <div className='etoilesBackground'>
+    {/* <div className='etoilesBackground'> */}
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
+      
+       <Header/>
+       <Footer/>
+       <LoginForm/>
+       </>
+       )
 
-    {/* <LoginForm /> */}
 
 {/* Jerome */}
-    <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  />
+    {/* <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  /> */}
     
-    </div>
-  </>
-  )
+    
+ 
+  
 };
 
 export default Home;

@@ -11,9 +11,9 @@ function Tchat() {
     return (
 
         <>
-        <div className="NavBar">
+        {/* <div className="NavBar">
           <Header className="black"/>
-        </div>
+        </div> */}
         <section className="main-tchat">
           
         <div className="matchs">
