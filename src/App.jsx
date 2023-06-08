@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import {useState, useEffect} from 'react'
+import "./App.scss";
 
 import Home from "./screens/Home";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./App.css";
+
 //TEST LOGINFORM
 import LoginForm from "./components/Loginform";
 import './components/Loginform.css';
@@ -16,23 +17,22 @@ function App() {
 
   return (
     <>
+    <div className="app">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
 
-
-    {/* <Home /> */}
-      <Routes>
+      <Header />
+    <Home />
+      {/* <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/characters" element={<Characters />} /> */}
-      </Routes>
+        {/* <Route path="/characters" element={<Characters />}
+      {</Routes> */}
 
       <LoginForm/>
-
-    <div className="app" > 
-      
-      <Header />
       <Footer />
 
-      </div>
-
+    </div>
     </>
   );
 }
