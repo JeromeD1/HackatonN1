@@ -6,6 +6,7 @@ import Home from "./screens/Home";
 
 
 
+
 import CharacterCardsList from "./screens/CharacterCardsList";
 
 import Header from "./components/Header";
@@ -16,12 +17,15 @@ import LoginForm from "./components/Loginform";
 import './components/Loginform.css';
 
 
+
 function App() {
 
 
 
   return (
     <>
+
+
     <div className="app">
       <div id="stars"></div>
       <div id="stars2"></div>
@@ -43,6 +47,7 @@ function App() {
       <Footer />
 
     </div>
+
 
     </>
   );
