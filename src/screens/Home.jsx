@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import "./Home.css"
+import FilterFormulaire from '../assets/FilterFormulaire';
 
 const Home = () => {
 
@@ -13,9 +14,12 @@ const Home = () => {
 
 
   return <>
-  {peoples.map(people =>(
+
+    <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  />
+    {/* <FilterFormulaire    /> */}
+  {/* {peoples.map(people =>(
     <img className='imagePeople' src={people.image} key={people.id} />
-  ))}
+  ))} */}
   </>;
 };
 
