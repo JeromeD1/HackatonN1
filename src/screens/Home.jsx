@@ -24,10 +24,10 @@ const Home = () => {
       <div id="stars2"></div>
       <div id="stars3"></div>
 
-    <LoginForm />
+    {/* <LoginForm /> */}
 
 {/* Jerome */}
-    {/* <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  /> */}
+    <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  />
     
     </div>
   </>
