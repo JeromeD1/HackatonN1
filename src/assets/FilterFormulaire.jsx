@@ -27,7 +27,38 @@ const FilterFormulaire = ({peoples,setPeoples}) => {
     const handleChangeTaille = (e) => setTaille(e.target.value);
 
 
-    
+    const handleClickButton = (e) => {
+        e.preventDefault();
+
+        if(genre != "tout" && genre != ""){
+            setPeoples(peoples.filter(person => person.gender === genre));
+        }
+        if(espece != "tout" && espece != ""){
+            setPeoples(peoples.filter(person => person.species === espece));
+        }
+        if(hair != "tout" && hair != ""){
+            setPeoples(peoples.filter(person => person.hairColor === hair));
+        }
+        if(eye != "tout" && eye != ""){
+            setPeoples(peoples.filter(person => person.eyeColor === eye));
+        }
+        if(masse === "moins60"){
+            setPeoples(peoples.filter(person => person.mass <= 60));
+        } else if(masse === "60a100"){
+            setPeoples(peoples.filter(person => person.mass >= 60 && person.mass <= 100));
+        } else if(masse === "plus100"){
+            setPeoples(peoples.filter(person => person.mass >= 100));
+        }
+        if(taille === "moins160"){
+            setPeoples(peoples.filter(person => person.height <= 1.6));
+        } else if(taille === "160a180"){
+            setPeoples(peoples.filter(person => person.height >= 1.6 && person.height <= 1.8));
+        } else if(taille === "plus180"){
+            setPeoples(peoples.filter(person => person.height >= 1.8));
+        }
+
+        console.log(peoples);
+    } 
 
 
     // useEffect({
