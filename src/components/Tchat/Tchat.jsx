@@ -3,13 +3,19 @@ import "./Tchat.scss"
 import Matchs from "./Matchs/Matchs"
 import MatchProfile from "./MatchProfile/MatchProfile";
 import TchatArea from "./TchatArea/TchatArea";
+import Header from "../Header"
 
 function Tchat() {
 
 
     return (
 
+        <>
+        <div className="NavBar">
+          <Header className="black"/>
+        </div>
         <section className="main-tchat">
+          
         <div className="matchs">
           <Matchs />
         </div>
@@ -20,7 +26,7 @@ function Tchat() {
           <MatchProfile />
         </div>
       </section>
-
+      </>
 
 
     )

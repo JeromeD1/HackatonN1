@@ -1,10 +1,10 @@
 import {useState, useEffect} from 'react'
 import "./Home.css"
-
 import LoginForm from '../components/Loginform';
-
 import FilterFormulaire from '../components/FilterFormulaire';
+import Header from "../components/Header"
 
+import "../components/Loginform.css"
 
 const Home = () => {
 
@@ -18,20 +18,27 @@ const Home = () => {
 
 
   return <>
-
-  {/* {peoples.map(people =>(
-    <img className='imagePeople' src={people.image} key={people.id} />
-  ))} */}
-  <LoginForm/>
+    
+    <Header/>
+    <LoginForm/>
 
 
     <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  />
-    {/* <FilterFormulaire    /> */}
-  {/* {peoples.map(people =>(
-    <img className='imagePeople' src={people.image} key={people.id} />
-  ))} */}
+
 
   </>;
 };
 
 export default Home;
+
+
+
+
+{  /* {peoples.map(people =>(
+  <img className='imagePeople' src={people.image} key={people.id} />
+))} */}
+
+    {/* <FilterFormulaire    /> */}
+  {/* {peoples.map(people =>(
+    <img className='imagePeople' src={people.image} key={people.id} />
+  ))} */}
