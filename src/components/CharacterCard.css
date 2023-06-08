@@ -1,6 +1,22 @@
-.boxCard{
+.cardContenair{
+    position: relative;
     width: 65em;
     height:60em;
+    transition: all 0.9s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.cardContenair.flip {
+    transform: rotateY(180deg);
+  }
+
+.boxCard{
+    position:absolute;
+    width: 65em;
+    height:60em;
+    /* width: 100%;
+    height:100%; changement Elo */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -13,7 +29,14 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(57, 48, 183, 0.62);
     margin: 10px;
-    padding: 50px;
+    padding-top:20px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.back{
+    transform: rotateY(180deg);
+    background: rgb(57, 48, 183);
 }
 
 .boxPhoto {
@@ -49,9 +72,9 @@ figcaption {
     width:200px;
     height: 350px;
     background-image: url('../assets/coeur-vide.png');
-    /* background-size: cover;
-    background-position: center; */
     background-size: contain;
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
     width: 50px;
     height: 50px;
+    /* background-size: cover;
+    background-position: center; */
