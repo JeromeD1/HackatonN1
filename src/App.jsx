@@ -29,23 +29,16 @@ function App() {
 
       <Header />
     <Home />
-      {/* <Routes>
+      /* <Routes>
         <Route path="/" element={<Home />} />
 
         {/* <Route path="/characters" element={<Characters />} /> */}
       </Routes>
       <CharacterCardsList/>
-
-        {/* <Route path="/characters" element={<Characters />}
-      {</Routes> */}
-
-      <LoginForm/>
-      <Footer />
-
-    </div>
-
+</div>
+        
     </>
-  );
-}
+  )
 
+  }
 export default App;
