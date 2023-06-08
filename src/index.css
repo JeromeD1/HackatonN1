@@ -2,3 +2,12 @@
   margin: 0px;
   padding: 0px;
 }
+
+
+:root {
+  --widthFormulaireHome: 500px;
+  --heightFormulaireHome: 700px;
+  --loginFormFontSize: 1rem;
+  --h1FontWeight: 1.5rem;
+}
+
