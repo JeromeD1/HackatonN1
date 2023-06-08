@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./screens/Home";
 
 import "./App.css";
+import CharacterCardsList from "./screens/CharacterCardsList";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/characters" element={<Characters />} /> */}
       </Routes>
+      <CharacterCardsList/>
     </>
   );
 }
