@@ -1,13 +1,16 @@
 * {
   margin: 0px;
   padding: 0px;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 
 :root {
-  --widthFormulaireHome: 500px;
+  --widthFormulaireHome: 400px;
   --heightFormulaireHome: 700px;
   --loginFormFontSize: 1rem;
   --h1FontWeight: 1.5rem;
+  --fontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
