@@ -1,7 +1,12 @@
 import { useState } from 'react'
 import './CharacterCard.css'
 
-const CharacterCard=({people})=>{
+const CharacterCard = ({people}) => {
+
+    const [favorite, setFavorite] = useState('false')
+    const handleClickFavorite= () => {
+        setFavorite(!favorite);
+    }
 
 const [classFlip,setClassFlip]=useState("cardContenair")
 
@@ -15,21 +20,19 @@ else{setClassFlip('cardContenair')}
 
     return (
         <>
-        <div onClick={handlecreatflip} className={classFlip}>
-            <div className="front boxCard">
-                <div className="boxPhoto"> 
-                    <img className='photo' src={people.image} alt={people.name} />
-                </div>
-                <figcaption>{people.name}</figcaption>
-                <div className="notFavorite"></div>
+        <div className="boxCard">
+            <div className="boxPhoto"> 
+                <img className='photo' src={people.image} alt={people.name} />
             </div>
-            <div className="back boxCard">
-                <h1>YEAHHHH</h1>
-            </div>
+            <figcaption>{people.name}</figcaption>
+            <div className="notFavorite"></div>
         </div>
+        <section>
+            <button>Précedent</button>
+            <button>Suivant</button>
+        </section>
         </>
     )
-
 }
 
-export default CharacterCard
+export default CharacterCard;
