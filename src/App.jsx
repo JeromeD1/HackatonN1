@@ -7,13 +7,13 @@ import "./App.css";
 
 function App() {
 
-  const [peoples, setPeoples] = useState([]);
+  // const [peoples, setPeoples] = useState([]);
   
-  useEffect(() => {
-    fetch("https://miadil.github.io/starwars-api/api/all.json")
-      .then((res) => res.json())
-      .then((res) => console.log(res) || setPeoples(res));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://miadil.github.io/starwars-api/api/all.json")
+  //     .then((res) => res.json())
+  //     .then((res) => console.log(res) || setPeoples(res));
+  // }, []);
 
 
   return (
