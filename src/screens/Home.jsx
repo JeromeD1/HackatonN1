@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import "./Home.css"
 
 const Home = () => {
 
@@ -11,7 +12,11 @@ const Home = () => {
     }, []);
 
 
-  return <>je suis dans la page home</>;
+  return <>
+  {peoples.map(people =>(
+    <img className='imagePeople' src={people.image} key={people.id} />
+  ))}
+  </>;
 };
 
 export default Home;
