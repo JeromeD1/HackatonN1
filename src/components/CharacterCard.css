@@ -17,8 +17,10 @@
 }
 
 .boxPhoto {
-    width: 40em;
-    height: 40em;
+    /* width: 40vw;
+    height: 75vh; */
+    width: 20vw;
+    /* height: 20vh; */
 }
 
 .photo {
@@ -35,22 +37,22 @@ figcaption {
     margin-top: 30px;
 }
 
-/* .isFavorite {
-   
-} */
+.isFavorite {
+   background-image: url('../assets/coeur-plein.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
 
 .notFavorite {
     width:200px;
     height: 350px;
     background-image: url('../assets/coeur-vide.png');
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover;
+    background-position: center; */
+    background-size: contain;
+   background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
 }
-
-/* .isFavorite {
-    width: 40px;
-    height: 40px;
-    background-image: url('../assets/coeur-vide.png');
-    background-size: 100%;
-    align-self: flex-start;
-  } */

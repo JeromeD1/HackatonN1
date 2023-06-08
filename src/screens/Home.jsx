@@ -1,6 +1,11 @@
 import {useState, useEffect} from 'react'
 import "./Home.css"
 
+import LoginForm from '../components/Loginform';
+
+import FilterFormulaire from '../components/FilterFormulaire';
+
+
 const Home = () => {
 
     const [peoples, setPeoples] = useState([]);
@@ -13,9 +18,19 @@ const Home = () => {
 
 
   return <>
-  {peoples.map(people =>(
+
+  {/* {peoples.map(people =>(
     <img className='imagePeople' src={people.image} key={people.id} />
-  ))}
+  ))} */}
+  <LoginForm/>
+
+
+    <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  />
+    {/* <FilterFormulaire    /> */}
+  {/* {peoples.map(people =>(
+    <img className='imagePeople' src={people.image} key={people.id} />
+  ))} */}
+
   </>;
 };
 

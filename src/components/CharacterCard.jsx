@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import './CharacterCard.css'
 
-const CharacterCard=({people})=>{
+const CharacterCard = ({people}) => {
+
+    const [favorite, setFavorite] = useState('false')
+    const handleClickFavorite= () => {
+        setFavorite(!favorite);
+    }
 
     return (
         <>
@@ -9,7 +15,7 @@ const CharacterCard=({people})=>{
                 <img className='photo' src={people.image} alt={people.name} />
             </div>
             <figcaption>{people.name}</figcaption>
-            <div className="notFavorite"></div>
+            <div onClick={handleClickFavorite} className={ favorite === true ? 'isFavorite' : 'notFavorite'}/>
         </div>
         <section>
             <button>Précedent</button>
@@ -17,7 +23,6 @@ const CharacterCard=({people})=>{
         </section>
         </>
     )
-
 }
 
-export default CharacterCard
+export default CharacterCard;
