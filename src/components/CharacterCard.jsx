@@ -9,8 +9,14 @@ const CharacterCard=({people})=>{
                 <img className='photo' src={people.image} alt={people.name} />
             </div>
             <figcaption>{people.name}</figcaption>
-            <div className="isfavorite"></div>
+            <div className="notFavorite">
+                test
+            </div>
         </div>
+        <section>
+            <button>Précedent</button>
+            <button>Suivant</button>
+        </section>
         </>
     )
 
