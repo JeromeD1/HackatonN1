@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react'
 import "./App.scss";
 
 import Home from "./screens/Home";
+
 import CharacterCardsList from "./screens/CharacterCardsList";
 
 import Header from "./components/Header";
@@ -16,6 +17,8 @@ function App() {
 
   return (
     <>
+
+
     <div className="app">
 
     <Header />
@@ -31,6 +34,7 @@ function App() {
       <Footer />
 
     </div>
+
     </>
   );
 }
