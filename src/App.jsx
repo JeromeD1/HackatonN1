@@ -8,6 +8,8 @@ import CharacterCardsList from "./screens/CharacterCardsList";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Swipe from "./components/Swipe/PageSwipe";
+import Tchat from "./components/Tchat/Tchat";
 
 //TEST LOGINFORM
 import LoginForm from "./components/Loginform";
@@ -24,6 +26,8 @@ function App() {
     <LoginForm/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Swipe" element={<Swipe />} />
+        <Route path="/Tchat" element={<Tchat />} />
 
 
 

@@ -11,7 +11,7 @@ const Home = () => {
     const [peoples, setPeoples] = useState([]);
 
     useEffect(() => {
-      fetch("https://miadil.github.io/starwars-api/api/all.json%22)
+      fetch("https://miadil.github.io/starwars-api/api/all.json%")
         .then((res) => res.json())
         .then((res) => console.log(res) || setPeoples(res));
     }, []);
