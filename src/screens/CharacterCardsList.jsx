@@ -13,12 +13,14 @@ const CharacterCardsList = () => {
         .then((res) => console.log(res) || setPeoples(res));
     }, []);
 
+    const [cardNumber,setcardNumber]=useState(0)
 
   return <>
-  {peoples.map(people =>(
-    <CharacterCard people={people} key={people.id}/>
-  ))}
-  
+    <CharacterCard people={peoples[cardNumber]}/>
+    <section>
+            <button>Précedent</button>
+            <button>Suivant</button>
+    </section>
   </>;
 };
 
