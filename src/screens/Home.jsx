@@ -3,7 +3,7 @@ import "./Home.css"
 
 import LoginForm from '../components/Loginform';
 
-import FilterFormulaire from '../assets/FilterFormulaire';
+import FilterFormulaire from '../components/FilterFormulaire';
 
 
 const Home = () => {

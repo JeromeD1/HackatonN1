@@ -23,11 +23,11 @@ function App() {
       <div id="stars3"></div>
 
       <Header />
-    {/* <Home /> */}
-      <Routes>
+    <Home />
+      {/* <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/characters" element={<Characters />} /> */}
-      </Routes>
+        {/* <Route path="/characters" element={<Characters />}
+      {</Routes> */}
 
       <LoginForm/>
       <Footer />
