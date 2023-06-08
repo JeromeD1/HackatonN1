@@ -1,27 +1,53 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import {useState, useEffect} from 'react'
+import "./App.scss";
+
 import Home from "./screens/Home";
 
 
-// Essais
-import Tchat from "./components/Tchat/Tchat"
-import Matchs from "./components/Tchat/Matchs/Matchs"
-import MatchProfile from "./components/Tchat/MatchProfile/MatchProfile"
 
-import "./App.css";
+
+import CharacterCardsList from "./screens/CharacterCardsList";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+//TEST LOGINFORM
+import LoginForm from "./components/Loginform";
+import './components/Loginform.css';
+
+
 
 function App() {
+
+
+
   return (
     <>
-      {/* <Header /> */}
-      <Tchat />
-      {/* <Routes> */}
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* <Route path="/characters" element={<Characters />} /> */}
-      {/* </Routes> */}
 
-      {/* essais */}
-      
+
+    <div className="app">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+
+      <Header />
+    <Home />
+      {/* <Routes>
+        <Route path="/" element={<Home />} />
+
+        {/* <Route path="/characters" element={<Characters />} /> */}
+      </Routes>
+      <CharacterCardsList/>
+
+        {/* <Route path="/characters" element={<Characters />}
+      {</Routes> */}
+
+      <LoginForm/>
+      <Footer />
+
+    </div>
+
 
     </>
   );
