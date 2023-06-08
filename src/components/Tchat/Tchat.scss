@@ -1,0 +1,62 @@
+$screen-width: 900px;
+
+
+@media (min-width: $screen-width) {
+  // Styles à appliquer lorsque la largeur d'écran est supérieure à $screen-width
+  
+  .main-tchat{
+  flex-direction: row;
+  min-width: 800px;
+  }
+
+
+}
+
+
+
+
+
+.main-tchat{
+
+    display:flex;
+    background-color: grey;
+    height:20vh;
+
+    .container-matchs{
+
+
+        .wrap-matchs{
+
+
+        }
+    }
+
+
+
+    .container-tchat{
+
+        .tchat-history-match{
+
+        }
+
+        .tchat-messages{
+
+        }
+
+        .tchat-input{
+
+
+        }
+
+    }
+
+    .container-description{
+
+        .description-match{
+
+
+        }
+    }
+
+
+}

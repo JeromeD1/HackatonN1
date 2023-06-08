@@ -1,4 +1,4 @@
-
+import "./Tchat.scss"
 
 function Tchat() {
 
@@ -16,15 +16,10 @@ function Tchat() {
                 <div className="tchat-messages"></div>
                 <div className="tchat-input"></div>
             </section>
+
             <section className="container-description">
                 <div className="description-match"></div>
-                <div className="buttons-match"></div>
-
             </section>
-
-
-
-
 
 
         </section>
@@ -36,3 +31,5 @@ function Tchat() {
 
 
 }
+
+export default Tchat;
