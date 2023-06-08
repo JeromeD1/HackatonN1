@@ -17,8 +17,6 @@ function App() {
 
   return (
     <>
-
-
     <div className="app">
 
     <Header />
@@ -26,14 +24,20 @@ function App() {
     <LoginForm/>
       <Routes>
         <Route path="/" element={<Home />} />
+
+
+
+
         {/* <Route path="/characters" element={<CharacterCardsList />} />   */}
       
       {/* <CharacterCardsList/> */}
     
+
       </Routes>
       <Footer />
 
     </div>
+
 
     </>
   );
