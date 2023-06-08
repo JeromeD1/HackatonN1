@@ -1,44 +1,36 @@
 import {useState, useEffect} from 'react'
-import "./Home.css"
-import LoginForm from '../components/Loginform';
-import FilterFormulaire from '../components/FilterFormulaire';
-import Header from "../components/Header"
+import "./Home.scss"
 
-import "../components/Loginform.css"
+import LoginForm from '../components/Loginform';
+
+import FilterFormulaire from '../components/FilterFormulaire';
+
 
 const Home = () => {
 
     const [peoples, setPeoples] = useState([]);
-  
+
     useEffect(() => {
-      fetch("https://miadil.github.io/starwars-api/api/all.json")
+      fetch("https://miadil.github.io/starwars-api/api/all.json%22)
         .then((res) => res.json())
         .then((res) => console.log(res) || setPeoples(res));
     }, []);
 
 
-  return <>
-    
-    <Header/>
-    <LoginForm/>
+  return (
+  <>
+    <div className='etoilesBackground'>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
 
 
-    <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  />
+{/* Jerome /}
+    {/ <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  /> */}
 
-
-  </>;
+    </div>
+  </>
+  )
 };
 
 export default Home;
-
-
-
-
-{  /* {peoples.map(people =>(
-  <img className='imagePeople' src={people.image} key={people.id} />
-))} */}
-
-    {/* <FilterFormulaire    /> */}
-  {/* {peoples.map(people =>(
-    <img className='imagePeople' src={people.image} key={people.id} />
-  ))} */}
