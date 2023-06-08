@@ -1,21 +1,19 @@
 import { Routes, Route } from "react-router-dom";
 import {useState, useEffect} from 'react'
+import "./App.scss";
 
 import Home from "./screens/Home";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./App.scss";
+
+//TEST LOGINFORM
+import LoginForm from "./components/Loginform";
+import './components/Loginform.css';
 
 function App() {
 
-  // const [peoples, setPeoples] = useState([]);
-  
-  // useEffect(() => {
-  //   fetch("https://miadil.github.io/starwars-api/api/all.json")
-  //     .then((res) => res.json())
-  //     .then((res) => console.log(res) || setPeoples(res));
-  // }, []);
+
 
   return (
     <>
@@ -23,14 +21,18 @@ function App() {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      
+
       <Header />
+    {/* <Home /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/characters" element={<Characters />} /> */}
+      </Routes>
+
+      <LoginForm/>
       <Footer />
 
     </div>
-
-
-    
     </>
   );
 }
