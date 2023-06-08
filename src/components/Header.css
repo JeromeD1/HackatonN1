@@ -1,27 +1,28 @@
-.logo {
-  height: 3em;
-  margin-left: 10px;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.globalHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
 }
 
-.headGlobal {
-  background-color: rgb(55, 55, 55);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.heartLogo {
+  height: 100px;
 }
-ul {
+
+.ulHeader {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
-li {
-  padding: 16px;
+
+.ulHeader li {
+  padding: 12px;
 }
-a {
+
+.ulHeader a {
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(253, 252, 252);
+  font-size: 30px;
 }
