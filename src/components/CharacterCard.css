@@ -1,6 +1,6 @@
 .boxCard{
-    width: 55vw;
-    height:85vh;
+    width: 65em;
+    height:60em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,8 +17,8 @@
 }
 
 .boxPhoto {
-    width: 40vw;
-    height: 75vh;
+    width: 40em;
+    height: 40em;
 }
 
 .photo {
@@ -40,8 +40,11 @@ figcaption {
 } */
 
 .notFavorite {
+    width:200px;
+    height: 350px;
     background-image: url('../assets/coeur-vide.png');
-    background-color: yellow;
+    background-size: cover;
+    background-position: center;
 }
 
 /* .isFavorite {
