@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Header.css";
+import "./Header.scss";
 
 const Header = () => {
   return (
@@ -8,17 +8,15 @@ const Header = () => {
             <img className="heartLogo" src="src\assets\images\heartLogo.png" alt="logo" />
             <ul className="ulHeader">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">Accueil</Link>
               </li>
               <li>
-                <Link to="/ContactUs">Contact Us</Link>
+                <Link to="/ContactUs">Mes Plans &#127825;</Link>
               </li>
               <li>
-                <Link to="Feedback">Feedback</Link>
+                <Link to="Feedback">Mon Profile</Link>
               </li>
-              <li>
-                <p>"dark mode"</p>
-              </li>
+            
             </ul>
     </header>
     </>

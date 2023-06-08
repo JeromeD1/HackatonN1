@@ -1,0 +1,27 @@
+$font-family-content : 'Segoe UI' , sans-serif;
+
+@media screen and (max-width: 900px){
+
+        .Container-matchProfile{
+                width:100vw;
+                
+        }
+}
+
+@media screen and (min-width: 900px){
+        
+        .Container-matchProfile{
+                height:100vh;
+               
+        }
+
+}
+
+
+
+.Container-matchProfile{
+
+        
+        box-sizing: border-box;
+        font-family:$font-family-content;
+}
