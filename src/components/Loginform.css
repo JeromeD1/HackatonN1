@@ -1,0 +1,66 @@
+.form-style{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: var(--widthFormulaireHome);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: var(--widthFormulaireHome);
+    align-items: center;
+    border: #AE4199 2px solid;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+input{
+    padding: 0.5rem 0 0.5rem 0 ;
+    margin: 1rem 0 1rem 0 ;
+    text-align: center;
+    width: 70%;
+    font-size: var(--loginFormFontSize);
+    background-color: rgb(249, 249, 249);
+    -webkit-box-shadow: 0px 4px 4px 0px #000000; 
+box-shadow: 0px 4px 4px 0px #000000;
+    border: #000000 1px solid;
+    border-radius: 6px;
+}
+
+button{
+    width: 70%;
+    padding: 0.5rem 0 0.5rem 0 ;
+    margin: 1rem 0 1rem 0;
+    font-size: var(--loginFormFontSize);
+    -webkit-box-shadow: 0px 4px 4px 0px #000000; 
+    box-shadow: 0px 4px 4px 0px #000000;
+        border: #000000 1px solid;
+    background-color: #AE4199;;
+    border-radius: 6px;
+    color: white;
+    font-weight: bolder;
+}
+
+h2{
+    padding: 0 0 1.5rem 0;
+    color: #AE4199;
+}
+
+.inscription-button{
+    color: white;
+    font-weight: bolder;
+    background-color:#AE4199;;
+    border-radius: 6px;
+}
+
+.div-line{
+    width:70%; 
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #AE4199;
+    margin: 1.5em ;
+    padding: 0;
+    border-radius: 2px;
+}

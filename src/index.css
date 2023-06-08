@@ -4,11 +4,10 @@
 }
 
 
-
 :root {
-
---widthFormulaireHome:500px;
---heightFormulaireHome: 700px;
---h1FontWeight: 1.5rem;
+  --widthFormulaireHome: 500px;
+  --heightFormulaireHome: 700px;
+  --loginFormFontSize: 1rem;
+  --h1FontWeight: 1.5rem;
 }
 
