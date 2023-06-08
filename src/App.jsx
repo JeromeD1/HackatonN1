@@ -5,7 +5,7 @@ import Home from "./screens/Home";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./App.css";
+import "./App.scss";
 
 function App() {
 
@@ -19,13 +19,18 @@ function App() {
 
   return (
     <>
-
-    <div className="app" > 
+    <div className="app">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
       
       <Header />
       <Footer />
 
-      </div>
+    </div>
+
+
+    
     </>
   );
 }
