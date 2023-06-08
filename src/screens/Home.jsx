@@ -25,9 +25,10 @@ const Home = () => {
       <div id="stars3"></div>
 
 
-{/* Jerome /}
-    {/ <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  /> */}
 
+{/* Jerome */}
+    {/* <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  /> */}
+    
     </div>
   </>
   )

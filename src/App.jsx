@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react'
 import "./App.scss";
 
 import Home from "./screens/Home";
+
 import CharacterCardsList from "./screens/CharacterCardsList";
 
 import Header from "./components/Header";
@@ -23,14 +24,21 @@ function App() {
     <LoginForm/>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/characters" element={<CharacterCardsList />} />   /}
 
-      {/ <CharacterCardsList/> */}
+
+
+
+        {/* <Route path="/characters" element={<CharacterCardsList />} />   */}
+      
+      {/* <CharacterCardsList/> */}
+    
 
       </Routes>
       <Footer />
 
     </div>
+
+
     </>
   );
 }
