@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import "./Home.css"
+import "./Home.scss"
 
 import LoginForm from '../components/Loginform';
 
@@ -17,21 +17,20 @@ const Home = () => {
     }, []);
 
 
-  return <>
+  return (
+  <>
+    <div className='etoilesBackground'>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
 
-  {/* {peoples.map(people =>(
-    <img className='imagePeople' src={people.image} key={people.id} />
-  ))} */}
-  <LoginForm/>
 
-
-    <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  />
-    {/* <FilterFormulaire    /> */}
-  {/* {peoples.map(people =>(
-    <img className='imagePeople' src={people.image} key={people.id} />
-  ))} */}
-
-  </>;
+{/* Jerome */}
+    {/* <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  /> */}
+    
+    </div>
+  </>
+  )
 };
 
 export default Home;
