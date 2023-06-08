@@ -10,8 +10,13 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/tchat" element= {<Tchat />} />
         {/* <Route path="/characters" element={<Characters />} /> */}
       </Routes>
+
+
+    
+
     </>
   );
 }
