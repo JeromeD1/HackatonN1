@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
 //TEST LOGINFORM
-import LoginForm from "./components/Loginform";
+// import LoginForm from "./components/Loginform";
 import './components/Loginform.css';
 
 function App() {
@@ -19,16 +19,17 @@ function App() {
 
 
     {/* <Home /> */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/characters" element={<Characters />} /> */}
-      </Routes>
+      
 
-      <LoginForm/>
+      {/* <LoginForm/> */}
 
     <div className="app" > 
       
       <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/characters" element={<Characters />} /> */}
+      </Routes>
       <Footer />
 
       </div>

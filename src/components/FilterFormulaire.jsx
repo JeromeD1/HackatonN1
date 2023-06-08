@@ -70,42 +70,42 @@ const FilterFormulaire = ({peoples,setPeoples}) => {
     return(
         <>
         <form>
-            <h1>Que recherchez vous :</h1>
-            <select onChange={handleChangeGenre}>
+            <h2>Que recherchez vous :</h2>
+            <select className='selectFilter' onChange={handleChangeGenre}>
                 <option value="" disabled selected >Un / Une partenaire</option>
                 <option value="tout">Je ne sais lequel choisir...</option>
                 <option value="female">Une femelle</option>
                 <option value="male">Un male</option>
             </select>
-            <select onChange={handleChangeEspece}>
+            <select className='selectFilter' onChange={handleChangeEspece}>
                 <option value="" disabled selected>Une espèce de préférence ?</option>
                 <option value="tout">Un trou est un trou...</option>
                 {uniqueSpecies.map(race => (
                     <option value={race} key={race} >{race}</option>
                 ))}
             </select>
-            <select onChange={handleChangeHair}>
+            <select className='selectFilter' onChange={handleChangeHair}>
                 <option value="" disabled selected>Couleur de cheveux</option>
                 <option value="tout">Peu importe</option>
                 {uniqueHairColors.map(color => (
                     <option value={color} key={color} >{color}</option>
                 ))}
             </select>
-            <select onChange={handleChangeEye}>
+            <select className='selectFilter' onChange={handleChangeEye}>
                 <option value="" disabled selected >Couleur des yeux</option>
                 <option value="tout">Whatever</option>
                 {uniqueEyeColor.map(color => (
                     <option value={color} key={color} >{color}</option>
                 ))}
             </select>
-            <select onChange={handleChangeMasse}>
+            <select className='selectFilter' onChange={handleChangeMasse}>
                 <option value="" disabled selected>Corpulance</option>
                 <option value="tout">Des microbes aux gros lardons...</option>
                 <option value="moins60">&#60; 60 kg</option>
                 <option value="60a100">de 60 à 100 kg </option>
                 <option value="plus100">&#62; 100 kg</option>
             </select>
-            <select onChange={handleChangeTaille}>
+            <select className='selectFilter' onChange={handleChangeTaille}>
                 <option value="" disabled selected>Taille</option>
                 <option value="tout">Ca dépend de quoi on parle... tout !</option>
                 <option value="moins160">&#60; 1m60</option>
