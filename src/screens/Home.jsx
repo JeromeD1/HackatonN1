@@ -1,9 +1,13 @@
 import {useState, useEffect} from 'react'
 import "./Home.scss"
 
-import LoginForm from '../components/Loginform';
+
 
 import FilterFormulaire from '../components/FilterFormulaire';
+
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import LoginForm from '../components/Loginform';
 
 
 const Home = () => {
@@ -19,19 +23,24 @@ const Home = () => {
 
   return (
   <>
-    <div className='etoilesBackground'>
+    {/* <div className='etoilesBackground'> */}
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
+      
+       <Header/>
+       <Footer/>
+       <LoginForm/>
+       </>
+       )
 
-    <LoginForm />
 
 {/* Jerome */}
-    {/* <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  className="fomulaire"/> */}
+    {/* <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  /> */}
     
-    </div>
-  </>
-  )
+    
+ 
+  
 };
 
 export default Home;
