@@ -10,13 +10,16 @@ function Tchat() {
     return (
 
         <section className="main-tchat">
-
-           <Matchs/>
-           <TchatArea/>
-           <MatchProfile/>
-
-
-        </section>
+        <div className="matchs">
+          <Matchs />
+        </div>
+        <div className="tchat-area">
+          <TchatArea />
+        </div>
+        <div className="match-profile">
+          <MatchProfile />
+        </div>
+      </section>
 
 
 

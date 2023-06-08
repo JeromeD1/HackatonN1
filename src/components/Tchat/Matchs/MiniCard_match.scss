@@ -1,4 +1,29 @@
+@media screen and (max-width: 900px){
 
+    .wrap-MiniCard{
+            height:13%;
+           
+    }
+
+    .profile-pic{
+        width: 60px;
+        height:60px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    
+    .wrap-MiniCard{
+            // height:100vh;
+           
+    }
+
+    .profile-pic{
+        width: 90px;
+        height:90px;
+    }
+
+}
 
 .wrap-MiniCard{
 
@@ -12,8 +37,7 @@
     padding:1rem;
     
     .profile-pic{
-        width: 90px;
-        height:90px;
+        
 
 
         img {
@@ -35,6 +59,7 @@
         }
 
         .profile-text{
+            font-style: italic;
             
         }
     }
