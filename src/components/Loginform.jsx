@@ -19,7 +19,7 @@ const handleSubmit = (event) => {
 }
 
     return(
-        
+    <div className="form-global">   
         <div className='form-style'> 
             
             
@@ -62,7 +62,7 @@ const handleSubmit = (event) => {
             </form>
             
         </div>
-        
+        </div>
     )
 }
 

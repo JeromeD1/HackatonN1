@@ -3,9 +3,6 @@ import {useState, useEffect} from 'react'
 import "./App.scss";
 
 import Home from "./screens/Home";
-
-
-
 import CharacterCardsList from "./screens/CharacterCardsList";
 
 import Header from "./components/Header";
@@ -15,35 +12,25 @@ import Footer from "./components/Footer";
 import LoginForm from "./components/Loginform";
 import './components/Loginform.css';
 
-
 function App() {
-
-
 
   return (
     <>
     <div className="app">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
 
-      <Header />
+    <Header />
     <Home />
-      {/* <Routes>
+    <LoginForm/>
+      <Routes>
         <Route path="/" element={<Home />} />
-
-        {/* <Route path="/characters" element={<Characters />} /> */}
+        {/* <Route path="/characters" element={<CharacterCardsList />} />   */}
+      
+      {/* <CharacterCardsList/> */}
+    
       </Routes>
-      <CharacterCardsList/>
-
-        {/* <Route path="/characters" element={<Characters />}
-      {</Routes> */}
-
-      <LoginForm/>
       <Footer />
 
     </div>
-
     </>
   );
 }
