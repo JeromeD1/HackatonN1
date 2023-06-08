@@ -4,12 +4,17 @@ import "./App.scss";
 
 import Home from "./screens/Home";
 
+
+
+import CharacterCardsList from "./screens/CharacterCardsList";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 //TEST LOGINFORM
 import LoginForm from "./components/Loginform";
 import './components/Loginform.css';
+
 
 function App() {
 
@@ -26,6 +31,11 @@ function App() {
     <Home />
       {/* <Routes>
         <Route path="/" element={<Home />} />
+
+        {/* <Route path="/characters" element={<Characters />} /> */}
+      </Routes>
+      <CharacterCardsList/>
+
         {/* <Route path="/characters" element={<Characters />}
       {</Routes> */}
 
@@ -33,6 +43,7 @@ function App() {
       <Footer />
 
     </div>
+
     </>
   );
 }

@@ -1,0 +1,53 @@
+.boxCard{
+    width: 55vw;
+    height:85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: no-wrap;
+    background: rgba(57, 48, 183, 0.47);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(57, 48, 183, 0.62);
+    margin: 10px;
+    padding: 50px;
+}
+
+.boxPhoto {
+    width: 40vw;
+    height: 75vh;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 3/2; */
+    object-fit: cover;
+    object-position: top;
+}
+
+figcaption {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+/* .isFavorite {
+   
+} */
+
+.notFavorite {
+    background-image: url('../assets/coeur-vide.png');
+    background-color: yellow;
+}
+
+/* .isFavorite {
+    width: 40px;
+    height: 40px;
+    background-image: url('../assets/coeur-vide.png');
+    background-size: 100%;
+    align-self: flex-start;
+  } */
