@@ -5,6 +5,8 @@
   justify-content: space-between;
   width: 100%;
   height: 20%;
+  box-sizing: border-box;
+  padding: 2vw;
 }
 
 .heartLogo {
@@ -15,14 +17,69 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin-right:2rem;
+  
 }
 
 .ulHeader li {
-  padding: 12px;
+  padding: 2rem;
 }
 
 .ulHeader a {
   text-decoration: none;
   color: rgb(253, 252, 252);
   font-size: 30px;
+
+
+  font-family: var(--fontFamily);
 }
+//TEST
+.menuToggle {
+  width: 50%;
+  display: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 2rem;
+  color: rgb(253, 252, 252);
+  font-family: var(--fontFamily);
+}
+/* Styles pour le menu burger en mode responsive */
+
+@media screen and (max-width: 768px) {
+
+  
+  .ulHeader {
+    display: none;
+    margin-right: 0;
+    
+  }
+
+  .menuToggle {
+    margin: auto;
+    display: block;
+    background-color: #AE4199;
+    opacity: 0.3;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+ // .mobileMenu li {
+    
+   
+    
+ // }
+}
+
+//Avec ces modifications, lorsque la résolution est inférieure à 768px, le menu burger sera affiché avec les liens dans une liste verticale. Lorsque le menu burger est cliqué, l'état isMenuOpen est basculé, ce qui déclenche la mise à jour de l'affichage pour afficher ou masquer le menu burger.

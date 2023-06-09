@@ -1,10 +1,13 @@
 import {useState, useEffect} from 'react'
 import "./CharacterCardsList.css"
 import CharacterCard from '../components/CharacterCard';
+import { useLocation } from 'react-router-dom';
 
 
 const CharacterCardsList = () => {
-
+  const location = useLocation();
+  const filteredPeoples = location.state;
+    
   const [peoples, setPeoples] = useState([]);
   const [cardNumber, setCardNumber] = useState(0)
 
@@ -22,10 +25,7 @@ const CharacterCardsList = () => {
   }, []);
 
   return <>
-  {/* {peoples.map(people =>(
-    <CharacterCard people={people} key={people.id}/>
-  ))} */}
-  
+   
   <CharacterCard people={peoples[cardNumber]}/>
   <div>
     <button onClick={handleClickPrecedent}>Précédent</button>

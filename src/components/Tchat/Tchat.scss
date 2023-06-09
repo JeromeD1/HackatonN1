@@ -1,0 +1,60 @@
+$screen-width: 900px;
+
+
+@media (min-width: $screen-width) {
+  // Styles à appliquer lorsque la largeur d'écran est supérieure à $screen-width
+  
+    .main-tchat{
+    flex-direction: row;
+    //min-width: 800px;
+
+    .matchs{
+    flex:1;
+    }
+
+    .tchat-area{
+    flex:4;
+    }
+
+    .match-profile{
+    flex:1.5;
+    }
+
+  }
+}
+
+@media (max-width: $screen-width) {
+    // Styles à appliquer lorsque la largeur d'écran est supérieure à $screen-width
+    
+    .main-tchat{
+    flex-direction: column;
+    
+    }
+
+
+    .matchs{
+        width:100%;
+        height:auto;
+        }
+    
+        .tchat-area{
+        flex:4;
+        }
+    
+        .match-profile{
+        flex:1.5;
+        }
+
+  }
+
+.NavBar{
+  background-color: #323232;
+}
+
+
+.main-tchat{
+    display:flex;
+    // justify-content: space-between;
+    background-color: white;
+    width:100%;
+}

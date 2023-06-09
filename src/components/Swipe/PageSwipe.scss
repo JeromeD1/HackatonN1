@@ -1,0 +1,157 @@
+.PageSwipe{
+    width:100vw;
+    height:100vh;
+}
+
+
+
+.wrap-content{
+    height:100%;
+    width:100vw;
+    background: #ae4199;
+    background: radial-gradient(circle, rgba(174,65,153,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.parent-card{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ExempleCard {
+    height: 60vh;
+    // width: 20vw;
+    aspect-ratio: 2/3;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 10px 43px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 8px solid white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    .pic-swipe {
+      box-sizing: border-box;
+    
+      height:70%;
+      
+  
+      img {
+        width:100%;
+        max-height:100%;
+        object-fit:contain;
+      }
+    }
+
+    .selec-swipe{
+        height:10%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin:2rem;
+
+        .valid{
+            box-sizing: border-box;
+            img{
+                width:100%;
+                height:100%;
+            }
+
+        }
+
+        .abort{
+            box-sizing: border-box;
+
+                img{
+                    width:100%;
+                    height:100%;
+                }
+
+        }
+    }
+  }
+
+/* -------------- Etoiles ----------------- */
+
+@function multiple-box-shadow($n) {
+    $value: "#{random(100)}vw #{random(100)}vw #FFF";
+    @for $i from 2 through $n {
+      $value: "#{$value}, #{random(100)}vw #{random(100)}vw #FFF";
+    }
+    @return unquote($value);
+  }
+  
+  $shadows-small: multiple-box-shadow(700);
+  $shadows-medium: multiple-box-shadow(200);
+  $shadows-big: multiple-box-shadow(100);
+
+
+
+
+
+#stars {
+    width: 0.05vw;
+    height: 0.05vw;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 100s linear infinite;
+  
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 0.08vw;
+      height: 0.08vw;
+      background: transparent;
+      box-shadow: $shadows-small;
+    }
+  }
+  
+  #stars2 {
+    width: 0.1vw;
+    height: 0.1vw;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStar 200s linear infinite;
+  
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 0.12vw;
+      height: 0.12vw;
+      background: transparent;
+      box-shadow: $shadows-medium;
+    }
+  }
+  
+  
+  #stars3 {
+    width: 0.12vw;
+    height: 0.12vw;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStar 300s linear infinite;
+  
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 0.13vw;
+      height: 0.13vw;
+      background: transparent;
+      box-shadow: $shadows-big;
+    }
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }

@@ -1,0 +1,46 @@
+
+
+.Container-textArea {
+    height: 100vh;
+    background-color: #f9f1f1;
+  
+    .TextArea {
+      height: 95%;
+      background-color: #e3d9d9;
+    }
+  
+    .InputArea {
+      height: 6%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .inputTchat {
+        width: 70%;
+        height: 50%;
+        border: none;
+        border-radius: 10px;
+        padding-left: 1rem;
+        box-shadow: none;
+      }
+  
+      .ImageButton {
+        margin-left:2rem;
+        box-sizing: border-box;
+        height: 100%;
+        width:auto;
+        background: none;
+        border: none;
+        padding: 0;
+        box-shadow: none;
+
+  
+        .img-btn {
+          box-sizing: border-box;
+          height: 50%;
+          width: 100%;
+        }
+
+      }
+    }
+  }
