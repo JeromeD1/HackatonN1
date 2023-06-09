@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom';
+import {useState} from 'react'
 
 import "./Matchs.scss"
 
@@ -8,7 +9,13 @@ import imgHome from '../../../assets/img/icons8-accueil-50.png';
 // import imgHome from '../../../assets/images/heartSolo.png';
 import imgRetourSwipe from '../../../assets/img/icons8-swipe-64.png';
 
-function Match() {
+function Match({propsMatched, userState, setUserState}) {
+
+    console.log("Matchs : " + propsMatched);
+
+    
+
+
 
     return (
 
@@ -33,9 +40,29 @@ function Match() {
             <div className="matchs-title">
                 <span> Messages </span>                      
             </div>
+            
+            
+           
+                
             <div className="matchs-miniCards">
-              <MiniCard_match/>
-            </div>
+                {propsMatched.map((elem, index) => {
+                console.log("elem tchat card:");
+                console.log(elem);
+                return (
+                <MiniCard_match
+                    key={index}
+                    person={elem}
+                    setUser={setUserState}
+                    index={index}
+                />
+            );
+  })}
+</div>
+
+                
+
+         
+            
 
         </section>
 
