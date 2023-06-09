@@ -11,7 +11,9 @@ import LoginForm from '../components/Loginform';
 
 const Home = ({props}) => {
 
+
   const [peoples, setPeoples] = props;
+
 
     useEffect(() => {
       fetch("https://miadil.github.io/starwars-api/api/all.json")
@@ -22,6 +24,7 @@ const Home = ({props}) => {
 
     const [indexFormaAfficher, setIndexFormaAfficher] = useState(0);
     const [userName, setUserName] = useState("");
+
   
     
     const formaAfficher = [<LoginForm indexFormaAfficher={indexFormaAfficher} setIndexFormaAfficher={setIndexFormaAfficher} userName={userName} setUserName={setUserName} />,
