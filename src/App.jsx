@@ -12,7 +12,7 @@ import Swipe from "./components/Swipe/PageSwipe";
 import Tchat from "./components/Tchat/Tchat";
 // import CardsList from "./screens/CharacterCardsList"
 import Etoiles from "./components/Etoiles";
-import "./components/Etoiles";
+import "./components/Etoiles.scss";
 
 
 //TEST LOGINFORM
