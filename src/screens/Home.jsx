@@ -9,7 +9,6 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import LoginForm from '../components/Loginform';
 
-
 const Home = () => {
 
     const [peoples, setPeoples] = useState([]);
@@ -20,27 +19,29 @@ const Home = () => {
         .then((res) => console.log(res) || setPeoples(res));
     }, []);
 
+    const [indexFormaAfficher, setIndexFormaAfficher] = useState(0);
+    const [userName, setUserName] = useState("");
+
+    const formaAfficher = [<LoginForm indexFormaAfficher={indexFormaAfficher} setIndexFormaAfficher={setIndexFormaAfficher} userName={userName} setUserName={setUserName} />,
+    <FilterFormulaire  peoples={peoples} setPeoples={setPeoples} userName={userName}/>
+  ]
 
   return (
-  <>
+    <>
     {/* <div className='etoilesBackground'> */}
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+      
       
        <Header/>
        <Footer/>
-       <LoginForm/>
+       {formaAfficher[indexFormaAfficher]}
+       {/* <LoginForm/> */}
+    
        </>
        )
-
 
 {/* Jerome */}
     {/* <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  /> */}
     
-    
- 
-  
 };
 
 export default Home;

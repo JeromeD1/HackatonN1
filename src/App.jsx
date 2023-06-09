@@ -10,6 +10,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Swipe from "./components/Swipe/PageSwipe";
 import Tchat from "./components/Tchat/Tchat";
+import Etoiles from "./components/Etoiles";
+import "./components/Etoiles";
 
 //TEST LOGINFORM
 import LoginForm from "./components/Loginform";
@@ -22,7 +24,7 @@ function App() {
     <>
     <div className="app">
 
-    
+    <Etoiles />
    
       <Routes>
         <Route path="/" element={<Home />} />
