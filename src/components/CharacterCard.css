@@ -2,8 +2,8 @@
 
 .cardContenair{
     position: relative;
-    width: 65em;
-    height:60em;
+    width: 45vw;
+    height:60vh;
     transition: all 0.9s ease;
     transform-style: preserve-3d;
     cursor: pointer;
@@ -46,8 +46,8 @@
 }
 
 .boxPhoto {
-    width: 55vw;
-    height: 75vh;
+    width: 30vw;
+    height: 30vw;
 }
 
 .photo {

@@ -25,7 +25,7 @@ const Header = () => {
             <Link to="/tchat">Mes Plans &#127825;</Link>
           </li>
           <li>
-            <Link to="Feedback">Mon Profil</Link>
+            <Link to="Profil">Mon Profil</Link>
           </li>
           <button onClick={toggleMenu} > &#9776;</button>
         </ul>
@@ -38,7 +38,7 @@ const Header = () => {
             <Link to="/tchat">Mes Plans &#127825;</Link>
           </li>
           <li>
-            <Link to="Feedback">Mon Profile</Link>
+            <Link to="Profil">Mon Profil</Link>
           </li>
         </ul>
       )}

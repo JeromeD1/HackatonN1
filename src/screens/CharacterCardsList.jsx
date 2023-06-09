@@ -25,12 +25,13 @@ const CharacterCardsList = () => {
   }, []);
 
   return <>
-   
-  <CharacterCard people={peoples[cardNumber]}/>
-  <div>
-    <button onClick={handleClickPrecedent}>Précédent</button>
-    <button onClick={handleClickSuivant}>Suivant</button>
+   <section className='carte'>
+  <CharacterCard people={filteredPeoples.filteredPeoples[cardNumber]}/>
+  <div className='divbouton'>
+    <button className='boutonswipe' onClick={handleClickPrecedent}>Précédent</button>
+    <button className='boutonswipe' onClick={handleClickSuivant}>Suivant</button>
   </div>
+  </section>
   </>;
 };
 

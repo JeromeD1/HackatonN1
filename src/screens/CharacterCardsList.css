@@ -1,0 +1,21 @@
+.boutonswipe {
+    width: 150px;
+    height: 40px;
+    /* margin-left: 130px; */
+}
+.carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.divbouton {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
