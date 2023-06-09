@@ -32,49 +32,87 @@ const FilterFormulaire = ({peoples,setPeoples,userName}) => {
     const handleChangeTaille = (e) => setTaille(e.target.value);
 
 
+    // const handleClickButton = (e) => {
+    //     e.preventDefault();
+
+    //     setNbClick(nbClick + 1);
+    //     console.log(genre,espece,hair,eye,masse,taille);
+    //     if(genre != "tout" && genre != ""){
+    //         setPeoples(peoples.filter(person => person.gender === genre));
+    //     }
+    //     if(espece != "tout" && espece != ""){
+    //         setPeoples(peoples.filter(person => person.species === espece));
+    //     }
+    //     if(hair != "tout" && hair != ""){
+    //         setPeoples(peoples.filter(person => person.hairColor === hair));
+    //     }
+    //     if(eye != "tout" && eye != ""){
+    //         setPeoples(peoples.filter(person => person.eyeColor === eye));
+    //     }
+    //     if(masse === "moins60"){
+    //         setPeoples(peoples.filter(person => person.mass <= 60));
+    //     } else if(masse === "60a100"){
+    //         setPeoples(peoples.filter(person => person.mass >= 60 && person.mass <= 100));
+    //     } else if(masse === "plus100"){
+    //         setPeoples(peoples.filter(person => person.mass >= 100));
+    //     }
+    //     if(taille === "moins160"){
+    //         setPeoples(peoples.filter(person => person.height <= 1.6));
+    //     } else if(taille === "160a180"){
+    //         setPeoples(peoples.filter(person => person.height >= 1.6 && person.height <= 1.8));
+    //     } else if(taille === "plus180"){
+    //         setPeoples(peoples.filter(person => person.height >= 1.8));
+    //     }
+    //     // TODO localStorage
+    //     // TODO useNavigate
+    //     if(nbClick>0){
+    //         navigate("/cardsList", {state: peoples})
+    //     }
+        
+    //     console.log(peoples);
+    // }
+
     const handleClickButton = (e) => {
         e.preventDefault();
+      
+        // Créer une copie des données initiales
+        let filteredPeoples = [...peoples];
+      
+        // Appliquer les filtres successivement
+        if (genre !== "tout" && genre !== "") {
+          filteredPeoples = filteredPeoples.filter(person => person.gender === genre);
+        }
+        if (espece !== "tout" && espece !== "") {
+          filteredPeoples = filteredPeoples.filter(person => person.species === espece);
+        }
+        if (hair !== "tout" && hair !== "") {
+          filteredPeoples = filteredPeoples.filter(person => person.hairColor === hair);
+        }
+        if (eye !== "tout" && eye !== "") {
+          filteredPeoples = filteredPeoples.filter(person => person.eyeColor === eye);
+        }
+        if (masse === "moins60") {
+          filteredPeoples = filteredPeoples.filter(person => person.mass <= 60);
+        } else if (masse === "60a100") {
+          filteredPeoples = filteredPeoples.filter(person => person.mass >= 60 && person.mass <= 100);
+        } else if (masse === "plus100") {
+          filteredPeoples = filteredPeoples.filter(person => person.mass >= 100);
+        }
+        if (taille === "moins160") {
+          filteredPeoples = filteredPeoples.filter(person => person.height <= 1.6);
+        } else if (taille === "160a180") {
+          filteredPeoples = filteredPeoples.filter(person => person.height >= 1.6 && person.height <= 1.8);
+        } else if (taille === "plus180") {
+          filteredPeoples = filteredPeoples.filter(person => person.height >= 1.8);
+        }
+      
+        // Mettre à jour l'état peoples avec les données filtrées
+        setPeoples(filteredPeoples);
+      
+        // Naviguer vers la page de destination avec les données filtrées
+        navigate("/cardsList", { state: { filteredPeoples } });
+      }
 
-        setNbClick(nbClick + 1);
-
-        if(genre != "tout" && genre != ""){
-            setPeoples(peoples.filter(person => person.gender === genre));
-        }
-        if(espece != "tout" && espece != ""){
-            setPeoples(peoples.filter(person => person.species === espece));
-        }
-        if(hair != "tout" && hair != ""){
-            setPeoples(peoples.filter(person => person.hairColor === hair));
-        }
-        if(eye != "tout" && eye != ""){
-            setPeoples(peoples.filter(person => person.eyeColor === eye));
-        }
-        if(masse === "moins60"){
-            setPeoples(peoples.filter(person => person.mass <= 60));
-        } else if(masse === "60a100"){
-            setPeoples(peoples.filter(person => person.mass >= 60 && person.mass <= 100));
-        } else if(masse === "plus100"){
-            setPeoples(peoples.filter(person => person.mass >= 100));
-        }
-        if(taille === "moins160"){
-            setPeoples(peoples.filter(person => person.height <= 1.6));
-        } else if(taille === "160a180"){
-            setPeoples(peoples.filter(person => person.height >= 1.6 && person.height <= 1.8));
-        } else if(taille === "plus180"){
-            setPeoples(peoples.filter(person => person.height >= 1.8));
-        }
-        // TODO localStorage
-        // TODO useNavigate
-        if(nbClick>0){
-            navigate("/cardsList", {state: peoples})
-        }
-        
-        console.log(peoples);
-    }
-
-    // useEffect({
-        
-    // },[])
  
 
     return(
