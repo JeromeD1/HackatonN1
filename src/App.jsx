@@ -41,13 +41,12 @@ function App() {
         <Route path="/swipe" element={<Swipe />} />
         {/* <Route path="/tchat" element={<Tchat propsPeoples={peoples} propsIndexMatched={indexMatched} />}/> */}
         <Route path="/tchat" element={<Tchat propsPeoples={peoples} propsIndexMatched={indexMatched} />}/>
-
-        
-        <Route path="/cardsList" element={<CharacterCardsList />}
+        <Route path="/cardsList" element={<CharacterCardsList />} />
         <Route path="/profil" element={<Profil />} />
+      
       </Routes>
 
-
+      </div>
 
 
         {/* <Route path="/characters" element={<CharacterCardsList />} />   */}
@@ -58,7 +57,7 @@ function App() {
       
       {/* <Footer /> */}
 
-    </div>
+   
 
 
     </>
