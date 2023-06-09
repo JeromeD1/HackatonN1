@@ -5,7 +5,7 @@ import "./Matchs.scss"
 
 import MiniCard_match from "./MiniCard_match"
 import imgHome from '../../../assets/img/icons8-accueil-50.png';
-import imgRetourSwipe from '../../../assets/img/icons8-moins-que-50.png';
+import imgRetourSwipe from '../../../assets/img/icons8-swipe-64.png';
 
 function Match() {
 
@@ -14,10 +14,10 @@ function Match() {
         <section className="Container-matchs">
 
            <div className="nav">
-                <Link to="/swipe">
-                <img src= {imgRetourSwipe} alt="Swipe" /></Link>
                 <Link to="/">
-                <img src={imgHome} alt="Home" /></Link>
+                <img src= {imgHome} alt="Swipe" /></Link>
+                <Link to="/swipe">
+                <img src={imgRetourSwipe} alt="Home" /></Link>
             </div>
 
             <div className="matchs-profile">
