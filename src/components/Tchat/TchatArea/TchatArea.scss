@@ -10,28 +10,33 @@
     }
   
     .InputArea {
-      height: 5%;
+      height: 6%;
       display: flex;
       align-items: center;
       justify-content: center;
   
-      input {
+      .inputTchat {
         width: 70%;
         height: 50%;
         border: none;
         border-radius: 10px;
         padding-left: 1rem;
+        box-shadow: none;
       }
   
-      button {
+      .ImageButton {
         margin-left:2rem;
         box-sizing: border-box;
         height: 100%;
+        width:auto;
         background: none;
         border: none;
         padding: 0;
+        box-shadow: none;
+
   
-        img {
+        .img-btn {
+          box-sizing: border-box;
           height: 50%;
           width: 100%;
         }

@@ -23,19 +23,40 @@ $font-family-content : 'Segoe UI' , sans-serif;
     .Container-matchs{
             height:100vh;
             min-width: 500px;
-           
     }
 
     .wrap-img{
         height:120px;
         width:120px;
-
 }
 
     .matchs-profile{
     height:10%;
     }
 }
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.wrap-MiniCard{
+
+    cursor:pointer;
+   
+
+    
+
+}
+
+.wrap-MiniCard:hover{
+    background-color: #F9F1F1;
+}
+
+
+
 
 
 
@@ -99,6 +120,8 @@ $font-family-content : 'Segoe UI' , sans-serif;
     height:80%;
     overflow: auto;
     border-top: 8px solid rgba(232, 229, 229, 0.663);
+    display:flex;
+    flex-direction: column;
     }
 
 

@@ -11,10 +11,10 @@ const Header = () => {
                 <Link to="/">Accueil</Link>
               </li>
               <li>
-                <Link to="/ContactUs">Mes Plans &#127825;</Link>
+                <Link to="/tchat">Mes Plans &#127825;</Link>
               </li>
               <li>
-                <Link to="Feedback">Mon Profile</Link>
+                <Link to="/profil">Mon Profile</Link>
               </li>
             
             </ul>

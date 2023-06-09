@@ -1,10 +1,28 @@
 import { useState } from "react";
 
 
-const LoginForm = () => {
+const LoginForm = ({indexFormaAfficher, setIndexFormaAfficher,userName,setUserName}) => {
 
 const [isRegistering, setIsRegistering] = useState(false); // État initial : connexion
-const [userName, setUserName] = useState("");
+
+const [nom, setNom] = useState("");
+const [prenom, setPrenom] = useState("");
+const [email, setEmail] = useState("");
+const [mdp, setMdp] = useState("");
+
+const handleChangeNom = (event) =>{
+    setNom(event.target.value);
+};
+const handleChangePrenom = (event) =>{
+    setPrenom(event.target.value);
+};
+const handleChangeEmail = (event) =>{
+    setEmail(event.target.value);
+};
+const handleChangeMdp = (event) =>{
+    setMdp(event.target.value);
+};
+
 
 const onChangeName = (event) =>{
     setUserName(event.target.value);
@@ -16,6 +34,17 @@ const handleSwitchForm = () => {
 
 const handleSubmit = (event) => {
     event.preventDefault();
+}
+
+const handleClickConnexion = () => {
+    if(isRegistering === false){
+        if(userName !="" && mdp != ""){
+            setIndexFormaAfficher(indexFormaAfficher + 1);
+        }
+    } else if(userName !="" && mdp != "" && nom != "" && prenom != "" && email != "") {
+        setIndexFormaAfficher(indexFormaAfficher + 1);
+    }
+    
 }
 
     return(
@@ -32,23 +61,23 @@ const handleSubmit = (event) => {
             <h2>Bienvenue sur STARMATCH!</h2>
 
             {isRegistering && (
-                <input type="text" placeholder='Nom' required/>
+                <input type="text" placeholder='Nom' onChange={handleChangeNom} required/>
             )} 
 
             {isRegistering && (
-                <input type="text" placeholder='Prénom'required/>
+                <input type="text" placeholder='Prénom' onChange={handleChangePrenom}required/>
             )}    
 
             {isRegistering && (
-                <input type="email" placeholder='Email'required/>
+                <input type="email" placeholder='Email' onChange={handleChangeEmail} required/>
             )}
 
                
                 <input type="text" placeholder='Pseudo' onChange={onChangeName} required/>
             
-                <input type="password" placeholder='Password'required/>
+                <input type="password" placeholder='Password' onChange={handleChangeMdp} required/>
 
-                <button type='submit'> {isRegistering ? 'Inscription' : 'Connexion'} </button>
+                <button type='submit' onClick={handleClickConnexion} > {isRegistering ? 'Inscription' : 'Connexion'} </button>
 
                 {!isRegistering && (
 
