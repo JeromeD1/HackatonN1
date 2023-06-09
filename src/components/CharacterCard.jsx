@@ -9,6 +9,7 @@ const CharacterCard = ({people}) => {
     }
 
     const [classFlip,setClassFlip]=useState("cardContenair")
+
     const handlecreatflip =(e)=>{
         if(classFlip==='cardContenair'){
             setClassFlip("cardContenair flip")
@@ -25,7 +26,7 @@ const CharacterCard = ({people}) => {
                     <img className='photo' src={people.image} alt={people.name} />
                 </div>
                 <figcaption>{people.name}</figcaption>
-                <div onClick={handleClickFavorite} className={ favorite === true ? 'isFavorite' : 'notFavorite'}/>
+                {/* <div onClick={handleClickFavorite} className={ favorite === true ? 'isFavorite' : 'notFavorite'}></div> */}
             </div>
             <div className="back boxCard">
                 <h1>YEAHHHH</h1>
