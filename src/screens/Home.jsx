@@ -20,6 +20,11 @@ const Home = () => {
         .then((res) => console.log(res) || setPeoples(res));
     }, []);
 
+    const [indexFormaAfficher, setIndexFormaAfficher] = useState(0);
+
+    const formaAfficher = [<LoginForm indexFormaAfficher={indexFormaAfficher} setIndexFormaAfficher={setIndexFormaAfficher} />,
+    <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}/>
+  ]
 
   return (
   <>
@@ -30,7 +35,8 @@ const Home = () => {
       
        <Header/>
        <Footer/>
-       <LoginForm/>
+       {formaAfficher[indexFormaAfficher]}
+       {/* <LoginForm/> */}
        </>
        )
 
