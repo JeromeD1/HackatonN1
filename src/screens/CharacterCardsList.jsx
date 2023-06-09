@@ -6,14 +6,14 @@ import { useLocation } from 'react-router-dom';
 
 const CharacterCardsList = () => {
   const location = useLocation();
-  const peoples = location.state;
+  const filteredPeoples = location.state;
     
 
 
 
   return <>
-  {console.log(peoples)}
-  {peoples.map(people =>(
+  {console.log(filteredPeoples.filteredPeoples)}
+  {filteredPeoples.filteredPeoples.map(people =>(
     <CharacterCard people={people} key={people.id}/>
   ))}
   
