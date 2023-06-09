@@ -43,7 +43,7 @@ function App() {
         <Route path="/tchat" element={<Tchat propsPeoples={peoples} propsIndexMatched={indexMatched} />}/>
 
         
-        <Route path="/cardsList" element={<CharacterCardsList />}
+        <Route path="/cardsList" element={<CharacterCardsList />}/>
         <Route path="/profil" element={<Profil />} />
       </Routes>
 

@@ -117,8 +117,8 @@ const FilterFormulaire = ({peoples,setPeoples,userName}) => {
 
     return(
         <>
-<
-        <form className='filterForm'>
+
+        <div className='filterForm'>
             <h2 className='h2-filter'>Bienvenue {userName}, que recherchez vous :</h2>
 
             <select className='selectFilter' onChange={handleChangeGenre}>
