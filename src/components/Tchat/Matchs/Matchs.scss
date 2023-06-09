@@ -42,6 +42,25 @@ $font-family-content : 'Segoe UI' , sans-serif;
     padding: 1rem;
 }
 
+.wrap-MiniCard{
+
+    cursor:pointer;
+   
+
+    
+
+}
+
+.wrap-MiniCard:hover{
+    background-color: #F9F1F1;
+}
+
+
+
+
+
+
+
 .Container-matchs {
     // width: 30vw;
                     //  
@@ -101,6 +120,8 @@ $font-family-content : 'Segoe UI' , sans-serif;
     height:80%;
     overflow: auto;
     border-top: 8px solid rgba(232, 229, 229, 0.663);
+    display:flex;
+    flex-direction: column;
     }
 
 

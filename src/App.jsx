@@ -18,8 +18,16 @@ import LoginForm from "./components/Loginform";
 import './components/Loginform.css';
 import Profil from "./components/Profile/Profil"
 
+
+
 function App() {
 
+  const tabMatch = [0,1,2,3,4];
+
+
+  const [peoples, setPeoples] = useState([]);
+  const [indexMatched, setIndexMatched] = useState(tabMatch);
+  
   return (
     <>
     <div className="app">
@@ -27,9 +35,10 @@ function App() {
     
    
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home props={[peoples, setPeoples]} />} />
         <Route path="/swipe" element={<Swipe />} />
-        <Route path="/tchat" element={<Tchat />} />
+        {/* <Route path="/tchat" element={<Tchat propsPeoples={peoples} propsIndexMatched={indexMatched} />}/> */}
+        <Route path="/tchat" element={<Tchat propsPeoples={peoples} propsIndexMatched={indexMatched} />}/>
         <Route path="/profil" element={<Profil />} />
       </Routes>
 

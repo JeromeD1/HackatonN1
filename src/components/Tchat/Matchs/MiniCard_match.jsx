@@ -1,19 +1,26 @@
 import "./MiniCard_match.scss"
 
 
-function MiniCard_match() {
+function MiniCard_match({person, setUser, index}) {
+
+
+    const handleClick = (e) => {
+        setUser(index);
+        // alert(index);
+    }
+
 
     return (
 
-        <div className="wrap-MiniCard">
+        <div className="wrap-MiniCard" onClick={handleClick}>
 
             <div className="profile-pic">
-                <img src="https://radiodisneyclub.fr/wp-content/uploads/2019/06/Jar-Jar-Binks-in-Star-Wars-700x368.jpg"
-                     alt="profile"/>
+                <img src={person.image}
+                     alt={person.name}/>
             </div>
 
             <div className="content-card">
-                <span className="profile-name"> JarJar Binks </span>
+                <span className="profile-name"> {person.name} </span>
                 <span className="profile-text"> Hey there </span>
             </div>
 
