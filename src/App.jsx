@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Swipe from "./components/Swipe/PageSwipe";
 import Tchat from "./components/Tchat/Tchat";
+// import CardsList from "./screens/CharacterCardsList"
 
 //TEST LOGINFORM
 import LoginForm from "./components/Loginform";
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/swipe" element={<Swipe />} />
         <Route path="/tchat" element={<Tchat />} />
+        <Route path="/cardsList" element={<CharacterCardsList />} />
         </Routes>
 
 

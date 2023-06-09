@@ -1,9 +1,11 @@
 import './FilterFormulaire.css'
 import { useState,useEffect } from 'react';
+import { Link , useNavigate} from "react-router-dom";
 
 
 const FilterFormulaire = ({peoples,setPeoples,userName}) => {
 
+    const navigate = useNavigate()
 
     const species = peoples.map(x => x.species);
     const uniqueSpecies = Array.from(new Set(species));
@@ -18,6 +20,9 @@ const FilterFormulaire = ({peoples,setPeoples,userName}) => {
     const [eye,setEye] = useState('');
     const [masse,setMasse] =useState('');
     const [taille,setTaille] = useState('');
+    const [nbClick,setNbClick] =useState(0);
+
+
 
     const handleChangeGenre = (e) => setGenre(e.target.value);
     const handleChangeEspece = (e) => setEspece(e.target.value);
@@ -29,6 +34,8 @@ const FilterFormulaire = ({peoples,setPeoples,userName}) => {
 
     const handleClickButton = (e) => {
         e.preventDefault();
+
+        setNbClick(nbClick + 1);
 
         if(genre != "tout" && genre != ""){
             setPeoples(peoples.filter(person => person.gender === genre));
@@ -56,20 +63,23 @@ const FilterFormulaire = ({peoples,setPeoples,userName}) => {
         } else if(taille === "plus180"){
             setPeoples(peoples.filter(person => person.height >= 1.8));
         }
-
+        // TODO localStorage
+        // TODO useNavigate
+        if(nbClick>0){
+            navigate("/cardsList", {state: peoples})
+        }
+        
         console.log(peoples);
     }
-
 
     // useEffect({
         
     // },[])
-  
-  
+ 
 
     return(
         <>
-        <form className='filterForm'>
+        <div className='filterForm'>
             <h2>Bienvenue {userName}, que recherchez vous :</h2>
             <select className='selectFilter' onChange={handleChangeGenre}>
                 <option value="" disabled selected >Un / Une partenaire</option>
@@ -112,9 +122,17 @@ const FilterFormulaire = ({peoples,setPeoples,userName}) => {
                 <option value="160a180">de 1m60 à 1m80 </option>
                 <option value="plus180">&#62; 1m80</option>
             </select>
+            
 
             <button onClick={handleClickButton}>Trouver un partenaire</button>
-        </form>
+            {/* <Link to={{
+                pathname: '/cardsList',
+                state: { peoples }
+                }}> */}
+            {/* </Link> */}
+            
+        </div>
+                
         </>
 
     )
