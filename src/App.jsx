@@ -14,6 +14,7 @@ import Tchat from "./components/Tchat/Tchat";
 //TEST LOGINFORM
 import LoginForm from "./components/Loginform";
 import './components/Loginform.css';
+import Profil from "./components/Profile/Profil"
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/swipe" element={<Swipe />} />
         <Route path="/tchat" element={<Tchat />} />
+        <Route path="/profil" element={<Profil />} />
         </Routes>
 
 
