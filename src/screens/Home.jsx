@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import "./Home.scss"
-
+import Etoiles from "../components/Etoiles"
 
 
 import FilterFormulaire from '../components/FilterFormulaire';
@@ -30,7 +30,7 @@ const Home = () => {
     <>
     {/* <div className='etoilesBackground'> */}
       
-      
+    <Etoiles />
        <Header/>
        <Footer/>
        {formaAfficher[indexFormaAfficher]}
