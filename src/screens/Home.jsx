@@ -1,8 +1,8 @@
 import {useState, useEffect} from 'react'
 import "./Home.scss"
+
+import { Link } from "react-router-dom";
 import Etoiles from "../components/Etoiles"
-
-
 import FilterFormulaire from '../components/FilterFormulaire';
 
 import Header from "../components/Header"
@@ -21,7 +21,8 @@ const Home = () => {
 
     const [indexFormaAfficher, setIndexFormaAfficher] = useState(0);
     const [userName, setUserName] = useState("");
-
+  
+    
     const formaAfficher = [<LoginForm indexFormaAfficher={indexFormaAfficher} setIndexFormaAfficher={setIndexFormaAfficher} userName={userName} setUserName={setUserName} />,
     <FilterFormulaire  peoples={peoples} setPeoples={setPeoples} userName={userName}/>
   ]
@@ -33,6 +34,7 @@ const Home = () => {
     <Etoiles />
        <Header/>
        <Footer/>
+
        {formaAfficher[indexFormaAfficher]}
        {/* <LoginForm/> */}
     
