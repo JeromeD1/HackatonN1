@@ -2,7 +2,7 @@ import './FilterFormulaire.css'
 import { useState,useEffect } from 'react';
 
 
-const FilterFormulaire = ({peoples,setPeoples}) => {
+const FilterFormulaire = ({peoples,setPeoples,userName}) => {
 
 
     const species = peoples.map(x => x.species);
@@ -69,8 +69,8 @@ const FilterFormulaire = ({peoples,setPeoples}) => {
 
     return(
         <>
-        <form>
-            <h2>Que recherchez vous :</h2>
+        <form className='filterForm'>
+            <h2>Bienvenue {userName}, que recherchez vous :</h2>
             <select className='selectFilter' onChange={handleChangeGenre}>
                 <option value="" disabled selected >Un / Une partenaire</option>
                 <option value="tout">Je ne sais lequel choisir...</option>
