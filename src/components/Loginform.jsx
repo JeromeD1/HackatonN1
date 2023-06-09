@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 
-const LoginForm = ({indexFormaAfficher, setIndexFormaAfficher}) => {
+const LoginForm = ({indexFormaAfficher, setIndexFormaAfficher,userName,setUserName}) => {
 
 const [isRegistering, setIsRegistering] = useState(false); // État initial : connexion
-const [userName, setUserName] = useState("");
+
 const [nom, setNom] = useState("");
 const [prenom, setPrenom] = useState("");
 const [email, setEmail] = useState("");

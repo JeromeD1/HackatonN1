@@ -7,7 +7,7 @@
 
 :root {
   --widthFormulaireHome: 400px;
-  --heightFormulaireHome: 700px;
+  --heightFormulaireHome: 50vh;
   --loginFormFontSize: 1rem;
   --h1FontWeight: 1.5rem;
   --couleurViolette: #AE4199;
