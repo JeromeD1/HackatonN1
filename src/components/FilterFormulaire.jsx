@@ -70,7 +70,7 @@ const FilterFormulaire = ({peoples,setPeoples,userName}) => {
     return(
         <>
         <form className='filterForm'>
-            <h2>Bienvenue {userName}, que recherchez vous :</h2>
+            <h2 className='h2-filter'>Bienvenue {userName}, que recherchez vous :</h2>
             <select className='selectFilter' onChange={handleChangeGenre}>
                 <option value="" disabled selected >Un / Une partenaire</option>
                 <option value="tout">Je ne sais lequel choisir...</option>
