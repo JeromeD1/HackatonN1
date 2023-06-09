@@ -9,7 +9,6 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import LoginForm from '../components/Loginform';
 
-
 const Home = () => {
 
     const [peoples, setPeoples] = useState([]);
@@ -28,26 +27,21 @@ const Home = () => {
   ]
 
   return (
-  <>
+    <>
     {/* <div className='etoilesBackground'> */}
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+      
       
        <Header/>
        <Footer/>
        {formaAfficher[indexFormaAfficher]}
        {/* <LoginForm/> */}
+    
        </>
        )
-
 
 {/* Jerome */}
     {/* <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  /> */}
     
-    
- 
-  
 };
 
 export default Home;
