@@ -36,9 +36,6 @@ const CharacterCard = ({people}) => {
                 <figcaption>{people?.name}</figcaption>
                 <div className='logosLayout'>
                     <div onClick={handleClickFavorite} className={ favorite === true ? 'isFavorite' : 'notFavorite'}></div>
-                    <div className='bulleLikeMe'>
-                        <p>Like Me !!!!</p>
-                    </div>
                     <div onClick={handlecreatflip} class="container">
                         <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
                             <circle cx="170" cy="170" r="160" stroke="#E2007C"/>

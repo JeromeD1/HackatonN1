@@ -23,12 +23,12 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: no-wrap;
-    background: rgba(57, 48, 183, 0.47);
+    background-color: rgba(182, 182, 182, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(57, 48, 183, 0.62);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: #AE4199 2px solid;
     margin: 10px;
     padding-top:20px;
     backface-visibility: hidden;
@@ -37,9 +37,12 @@
 
 .back{
     transform: rotateY(180deg);
-    background: rgb(57, 48, 183);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(182, 182, 182, 0.2);
     display: flex;
     justify-content: flex-start;
+    border: #AE4199 2px solid;
 }
 
 .boxPhoto {
@@ -54,6 +57,7 @@
     object-fit: cover;
     object-position: top;
     transition: 1s;
+    border-radius: 15px;
 }
 
 figcaption {
