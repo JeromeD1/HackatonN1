@@ -14,6 +14,7 @@ const Header = () => {
   return (
     <>
     <header className="globalHeader">
+
       <img className="heartLogo" src="src/assets/images/heartLogo.png" alt="logo" />
       {isMenuOpen ? (
         <ul className="ulHeader mobileMenu">
@@ -46,6 +47,7 @@ const Header = () => {
         &#9776;
       </button>
        
+
     </header>
     </>
   );

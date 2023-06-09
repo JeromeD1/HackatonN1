@@ -1,21 +1,19 @@
 import {useState, useEffect} from 'react'
 import "./CharacterCardsList.css"
 import CharacterCard from '../components/CharacterCard';
+import { useLocation } from 'react-router-dom';
 
 
 const CharacterCardsList = () => {
+  const location = useLocation();
+  const filteredPeoples = location.state;
+    
 
-    const [peoples, setPeoples] = useState([]);
-  
-    useEffect(() => {
-      fetch("https://miadil.github.io/starwars-api/api/all.json")
-        .then((res) => res.json())
-        .then((res) => console.log(res) || setPeoples(res));
-    }, []);
 
 
   return <>
-  {peoples.map(people =>(
+  {console.log(filteredPeoples.filteredPeoples)}
+  {filteredPeoples.filteredPeoples.map(people =>(
     <CharacterCard people={people} key={people.id}/>
   ))}
   
