@@ -4,7 +4,7 @@ import "./pageSwipe.scss"
 
  import Header from "../Header";
  import imgHome from '../../assets/img/icons8-accueil-50.png';
-import imgRetourSwipe from '../../assets/img/icons8-moins-que-50.png';
+import imgRetourSwipe from '../../assets/img/icons8-forward-50.png';
 import imgSabre from '../../assets/img/icons8-sabre-laser-48.png';
 import imgLike from '../../assets/img/icons8-aimer-50.png';
 
@@ -16,10 +16,10 @@ function PageSwipe() {
         <section class="PageSwipe">
             
             <div className="nav">
-                <Link to="/swipe">
-                <img src= {imgRetourSwipe} alt="Swipe" /></Link>
                 <Link to="/">
-                <img src={imgHome} alt="Home" /></Link>
+                <img src= {imgHome} alt="Swipe" /></Link>
+                <Link to="/tchat">
+                <img src={imgRetourSwipe} alt="Home" /></Link>
             </div>
 
         

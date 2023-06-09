@@ -24,14 +24,14 @@ function App() {
     <>
     <div className="app">
 
-    <Etoiles />
+    
    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/swipe" element={<Swipe />} />
         <Route path="/tchat" element={<Tchat />} />
         <Route path="/profil" element={<Profil />} />
-        </Routes>
+      </Routes>
 
 
 
