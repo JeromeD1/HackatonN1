@@ -6,6 +6,7 @@ import "./Matchs.scss"
 
 import MiniCard_match from "./MiniCard_match"
 import imgHome from '../../../assets/img/icons8-accueil-50.png';
+// import imgHome from '../../../assets/images/heartSolo.png';
 import imgRetourSwipe from '../../../assets/img/icons8-swipe-64.png';
 
 function Match({propsMatched, userState, setUserState}) {
