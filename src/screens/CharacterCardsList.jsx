@@ -18,7 +18,7 @@ const CharacterCardsList = () => {
   useEffect(() => {
     fetch("https://miadil.github.io/starwars-api/api/all.json")
       .then((res) => res.json())
-      .then((res) => console.log(res) || setPeoples(res));
+      .then((res) => setPeoples(res));
   }, []);
 
   return <>

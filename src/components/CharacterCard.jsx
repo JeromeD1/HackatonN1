@@ -23,10 +23,10 @@ const CharacterCard = ({people}) => {
         <div onClick={handlecreatflip} className={classFlip}>
             <div className="front boxCard">
                 <div className="boxPhoto"> 
-                    <img className='photo' src={people.image} alt={people.name} />
+                    <img className='photo' src={people?.image} alt={people?.name} />
                 </div>
-                <figcaption>{people.name}</figcaption>
-                {/* <div onClick={handleClickFavorite} className={ favorite === true ? 'isFavorite' : 'notFavorite'}></div> */}
+                <figcaption>{people?.name}</figcaption>
+                <div onClick={handleClickFavorite} className={ favorite === true ? 'isFavorite' : 'notFavorite'}></div>
             </div>
             <div className="back boxCard">
                 <h1>YEAHHHH</h1>
