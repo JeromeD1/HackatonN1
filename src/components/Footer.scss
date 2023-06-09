@@ -3,11 +3,16 @@
     align-items: center;
     justify-content: space-between;
     width: fit-content;
-    height: 100px;
+    height: 50vh;
+    /* rajout antoine */
+    position:absolute;
+    bottom:0;
   }
   
   .footerImg {
-    height: 500px;
+    /*Reprise antoine*/
+    height: 100%;
+    /**/
     position: absolute;
     bottom: 0;
     left: 0;

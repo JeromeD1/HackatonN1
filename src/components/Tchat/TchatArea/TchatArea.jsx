@@ -12,9 +12,9 @@ function TchatArea() {
         <div className="Container-textArea">
             <div className="TextArea"></div>
             <div className="InputArea">
-                <input type="text" value="" placeholder="Send a message"></input>
+                <input type="text" className="inputTchat" value="" placeholder="Send a message"></input>
                 <button type="submit" className="ImageButton">
-                    <img src={imageButton} alt="Button Image" />
+                    <img className="img-btn" src={imageButton} alt="Button Image" />
                 </button>
             </div>
         </div>
