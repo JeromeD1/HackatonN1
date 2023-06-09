@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import Swipe from "./components/Swipe/PageSwipe";
 import Tchat from "./components/Tchat/Tchat";
 import Etoiles from "./components/Etoiles";
-import "./components/Etoiles";
+import "./components/Etoiles.scss";
 
 //TEST LOGINFORM
 import LoginForm from "./components/Loginform";

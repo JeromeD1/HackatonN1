@@ -4,6 +4,7 @@ import "./pageSwipe.scss"
 
  import Header from "../Header";
  import imgHome from '../../assets/img/icons8-accueil-50.png';
+// import imgHome from '../../assets/images/heartSolo.png';
 import imgRetourSwipe from '../../assets/img/icons8-forward-50.png';
 import imgSabre from '../../assets/img/icons8-sabre-laser-48.png';
 import imgLike from '../../assets/img/icons8-aimer-50.png';
