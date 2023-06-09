@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-const LoginForm = () => {
+const LoginForm = ({indexFormaAfficher, setIndexFormaAfficher}) => {
 
 const [isRegistering, setIsRegistering] = useState(false); // État initial : connexion
 const [userName, setUserName] = useState("");
@@ -16,6 +16,10 @@ const handleSwitchForm = () => {
 
 const handleSubmit = (event) => {
     event.preventDefault();
+}
+
+const handleClickConnexion = () => {
+    setIndexFormaAfficher(indexFormaAfficher + 1);
 }
 
     return(
@@ -48,7 +52,7 @@ const handleSubmit = (event) => {
             
                 <input type="password" placeholder='Password'required/>
 
-                <button type='submit'> {isRegistering ? 'Inscription' : 'Connexion'} </button>
+                <button type='submit' onClick={handleClickConnexion} > {isRegistering ? 'Inscription' : 'Connexion'} </button>
 
                 {!isRegistering && (
 
