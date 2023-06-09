@@ -23,13 +23,11 @@ $font-family-content : 'Segoe UI' , sans-serif;
     .Container-matchs{
             height:100vh;
             min-width: 500px;
-           
     }
 
     .wrap-img{
         height:120px;
         width:120px;
-
 }
 
     .matchs-profile{
@@ -38,7 +36,11 @@ $font-family-content : 'Segoe UI' , sans-serif;
 }
 
 
-
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
 
 .Container-matchs {
     // width: 30vw;

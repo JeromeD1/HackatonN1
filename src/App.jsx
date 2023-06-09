@@ -11,10 +11,14 @@ import Footer from "./components/Footer";
 import Swipe from "./components/Swipe/PageSwipe";
 import Tchat from "./components/Tchat/Tchat";
 // import CardsList from "./screens/CharacterCardsList"
+import Etoiles from "./components/Etoiles";
+import "./components/Etoiles";
+
 
 //TEST LOGINFORM
 import LoginForm from "./components/Loginform";
 import './components/Loginform.css';
+import Profil from "./components/Profile/Profil"
 
 function App() {
 
@@ -29,7 +33,9 @@ function App() {
         <Route path="/swipe" element={<Swipe />} />
         <Route path="/tchat" element={<Tchat />} />
         <Route path="/cardsList" element={<CharacterCardsList />} />
-        </Routes>
+        <Route path="/profil" element={<Profil />} />
+      </Routes>
+
 
 
 

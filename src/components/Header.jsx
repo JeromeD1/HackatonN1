@@ -14,7 +14,7 @@ const Header = () => {
                 <Link to="/tchat">Mes Plans &#127825;</Link>
               </li>
               <li>
-                <Link to="Feedback">Mon Profile</Link>
+                <Link to="/profil">Mon Profile</Link>
               </li>
             
             </ul>
