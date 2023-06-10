@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import "./Home.scss"
+import "./Home.css"
 
 import { Link } from "react-router-dom";
 import Etoiles from "../components/Etoiles"
@@ -34,24 +35,14 @@ const Home = ({props}) => {
 
   return (
     <>
-    {/* <div className='etoilesBackground'> */}
       
     <Etoiles />
-       <Header/>
-       <Footer/>
-
-
- 
-
-       {formaAfficher[indexFormaAfficher]}
-
-       {/* <LoginForm/> */}
-    
+    <section className='sectionFormulaires'>
+    {formaAfficher[indexFormaAfficher]}
+    </section>
+    <Footer/>
        </>
-       )
-
-{/* Jerome */}
-    {/* <FilterFormulaire  peoples={peoples} setPeoples={setPeoples}  /> */}
+  )
     
 };
 

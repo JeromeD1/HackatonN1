@@ -14,13 +14,19 @@
     height: 100%;
     /**/
     position: absolute;
+    overflow: hidden;
     bottom: 0;
     left: 0;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1100px) {
     .footerImg{
       z-index: -1;
       opacity: 0.4;
+      height: 80vh;
+    }
+
+    .footerImg {
+      max-width: 100vw;
     }
   }

@@ -48,7 +48,7 @@ const handleClickConnexion = () => {
 }
 
     return(
-    <div className="form-global">   
+    <div className={isRegistering === false ? "form-global" : "form-global2"}>   
         <div className='form-style'> 
             
             

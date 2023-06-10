@@ -35,7 +35,7 @@ function App() {
     <div className="app">
 
     
-   
+      <Header />
       <Routes>
         <Route path="/" element={<Home props={[peoples, setPeoples]} />} />
         <Route path="/swipe" element={<Swipe />} />

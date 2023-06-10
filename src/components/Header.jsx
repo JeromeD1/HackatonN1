@@ -14,35 +14,22 @@ const Header = () => {
   return (
     <>
     <header className="globalHeader">
-
-      <img className="heartLogo" src="src/assets/images/heartLogo.png" alt="logo" />
-      {isMenuOpen ? (
-        <ul className="ulHeader mobileMenu">
-          <li>
-            <Link to="/">Accueil</Link>
-          </li>
-          <li>
-            <Link to="/tchat">Mes Plans &#127825;</Link>
-          </li>
-          <li>
-            <Link to="Profil">Mon Profil</Link>
-          </li>
-          <button onClick={toggleMenu} > &#9776;</button>
-        </ul>
-      ) : (
-        <ul className="ulHeader">
-          <li>
-            <Link to="/">Accueil</Link>
-          </li>
-          <li>
-            <Link to="/tchat">Mes Plans &#127825;</Link>
-          </li>
-          <li>
-            <Link to="Profil">Mon Profil</Link>
-          </li>
-        </ul>
-      )}
-       
+    <img className="heartLogo" src="src/assets/images/heartLogo.png" alt="logo" />
+      <div className={isMenuOpen ? "mobile-menu-container" : "menu-container"} >
+        
+          <ul className={isMenuOpen ? "mobileMenu" : "ulHeader"}>
+            <li>
+              <Link to="/">Accueil</Link>
+            </li>
+            <li>
+              <Link to="/tchat">Mes Plans &#127825;</Link>
+            </li>
+            <li>
+              <Link to="Profil">Mon Profil</Link>
+            </li>
+          </ul>
+        
+       </div>
       <button className="menuToggle" onClick={toggleMenu}>
         &#9776;
       </button>

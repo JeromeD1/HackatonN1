@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import "./CharacterCardsList.css"
 import CharacterCard from '../components/CharacterCard';
+import Etoiles from '../components/Etoiles';
 import { useLocation } from 'react-router-dom';
 
 
@@ -25,12 +26,13 @@ const CharacterCardsList = () => {
   }, []);
 
   return <>
-   <section className='carte'>
-  <CharacterCard people={filteredPeoples.filteredPeoples[cardNumber]}/>
-  <div className='divbouton'>
-    <button className='boutonswipe' onClick={handleClickPrecedent}>Précédent</button>
-    <button className='boutonswipe' onClick={handleClickSuivant}>Suivant</button>
-  </div>
+  <Etoiles />
+  <section className='carte'>
+    <CharacterCard people={filteredPeoples.filteredPeoples[cardNumber]}/>
+    <div className='divbouton'>
+      <button className='boutonswipe' onClick={handleClickPrecedent}>Précédent</button>
+      <button className='boutonswipe' onClick={handleClickSuivant}>Suivant</button>
+    </div>
   </section>
   </>;
 };

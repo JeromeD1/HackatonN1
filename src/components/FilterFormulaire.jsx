@@ -164,7 +164,7 @@ const FilterFormulaire = ({peoples,setPeoples,userName}) => {
             </select>
             
 
-            <button onClick={handleClickButton}>Trouver un partenaire</button>
+            <button className='buttonFilter' onClick={handleClickButton}>Trouver un partenaire</button>
             {/* <Link to={{
                 pathname: '/cardsList',
                 state: { peoples }
