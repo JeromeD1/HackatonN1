@@ -19,13 +19,13 @@ const Header = () => {
         
           <ul className={isMenuOpen ? "mobileMenu" : "ulHeader"}>
             <li>
-              <Link to="/">Accueil</Link>
+              <Link to="/" onClick={toggleMenu}>Accueil</Link>
             </li>
             <li>
-              <Link to="/tchat">Mes Plans &#127825;</Link>
+              <Link to="/tchat" onClick={toggleMenu}>Mes Plans &#127825;</Link>
             </li>
             <li>
-              <Link to="Profil">Mon Profil</Link>
+              <Link to="Profil" onClick={toggleMenu}>Mon Profil</Link>
             </li>
           </ul>
         

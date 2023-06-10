@@ -33,7 +33,7 @@ const CharacterCard = ({people}) => {
                 <div className="boxPhoto"> 
                     <img className='photo' src={people?.image} alt={people?.name} />
                 </div>
-                <figcaption>{people?.name}</figcaption>
+                <figcaption className='card-figcaption'>{people?.name}</figcaption>
                 <div className='logosLayout'>
                     <div onClick={handleClickFavorite} className={ favorite === true ? 'isFavorite' : 'notFavorite'}></div>
                     <div onClick={handlecreatflip} class="container">

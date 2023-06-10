@@ -1,0 +1,27 @@
+.figure-minicard{
+    width: 116px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(80, 65, 152, 0.2);
+    border: #AE4199 2px solid;
+    padding: 8px;
+    box-sizing: border-box;
+
+}
+
+.image-minicard{
+    width: 100px;
+    height: 100px;
+}
+
+.nom-minicard{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
