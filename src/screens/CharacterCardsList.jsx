@@ -31,8 +31,8 @@ const CharacterCardsList = () => {
   <h2 id='h2MesMatch' >Liste de ceux avec qui je pourrais accrocher :</h2>
   <main className='mainCardList' >
     <section className='mesMatch'>
-        {filteredPeoples.filteredPeoples.map(people => (
-          <MiniCards image={people.image} nom={people.name} />
+        {filteredPeoples.filteredPeoples.map(person => (
+          <MiniCards image={person.image} nom={person.name} person={person} filteredPeoples={filteredPeoples.filteredPeoples} setCardNumber={setCardNumber} />
         ))}
     </section>
 

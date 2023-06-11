@@ -19,7 +19,8 @@
     flex-wrap: wrap;
     overflow: auto;
     padding: 16px;
-    border: 2px solid rgb(2, 2, 104);
+    border: 10px ridge var(--couleurViolette);
+    margin-left: 10px;
 }
 
 #h2MesMatch {
@@ -48,4 +49,37 @@ margin-left: 40px;
     display: flex;
     justify-content: space-around;
     gap: 50px;
+}
+
+
+@media screen and (max-width:850px) {
+    .mainCardList {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 95vw;
+         margin-left: auto;
+         margin-right: auto;
+         gap: 24px;
+     }
+
+     .mesMatch {
+        position: relative;
+        width: 95vw;
+        height: 210px;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 16px;
+        margin-left: 0;
+    }
+
+    .carte {
+        width: 95vw;
+        height: calc(100vh - 420px);
+        position: relative;
+        top: 0;
+        justify-content: space-around;
+    }
 }

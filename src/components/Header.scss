@@ -55,7 +55,11 @@
 
 @media screen and (max-width: 960px) {
 
-  
+  .menu-container {
+    padding: 0;
+    height: 100px;
+  }
+
   .ulHeader {
     display: none;
     margin-right: 0;
@@ -115,6 +119,11 @@
 }
 
 @media screen and (max-width:600px) {
+  
+  .menu-container {
+    height: 80px;
+  }
+  
   .menuToggle {
     right: 2vw;
   }
