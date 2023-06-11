@@ -7,8 +7,13 @@ const Header = () => {
   
 
   const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-    
+    setMenuOpen(!isMenuOpen); 
+  };
+
+  const toggleMenuLink = () => {
+    if(isMenuOpen){
+      setMenuOpen(!isMenuOpen); 
+    }
   };
   
   return (
@@ -19,13 +24,13 @@ const Header = () => {
         
           <ul className={isMenuOpen ? "mobileMenu" : "ulHeader"}>
             <li>
-              <Link to="/" onClick={toggleMenu}>Accueil</Link>
+              <Link to="/" onClick={toggleMenuLink}>Accueil</Link>
             </li>
             <li>
-              <Link to="/tchat" onClick={toggleMenu}>Mes Plans &#127825;</Link>
+              <Link to="/tchat" onClick={toggleMenuLink}>Mes Plans &#127825;</Link>
             </li>
             <li>
-              <Link to="Profil" onClick={toggleMenu}>Mon Profil</Link>
+              <Link to="Profil" onClick={toggleMenuLink}>Mon Profil</Link>
             </li>
           </ul>
         
