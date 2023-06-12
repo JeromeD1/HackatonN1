@@ -93,7 +93,7 @@ margin-left: 40px;
 
 }
 
-@media screen and (max-height:830px) {
+@media screen and (max-height:830px) and (max-width:850px) {
     .carte {
         height: calc(100vh - 380px);
     }
