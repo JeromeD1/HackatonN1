@@ -98,6 +98,7 @@ body{
         .pic-user {
             flex-direction: row;
             justify-content: space-around;
+            max-height: 280px;
             max-width:80vw;
             width: 80vw;
             padding: 36px;
@@ -118,12 +119,75 @@ body{
             .textArea{
                 font-size: 1.2rem;
                 max-width:80vw;
+                overflow: auto;
+                
+                max-height: calc(100vh - 400px);
 
             }
         }
     }
     
+}
     
+@media screen and (max-width:750px) {
+    .user-profile{
+        gap: 1rem;
+
+        .pic-user {
+
+            width: 90vw;
+            max-width: 90vw;
+            padding: 8px;
+            gap: 8px;
+
+            .infoProfile{
+                width: 130px;
+                .user {
+                    font-size: 1.1rem;
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+
+        .description{
+            max-width:90vw;
+            width: 90vw;
+
+            .textArea{
+                font-size: 1rem;
+                max-width:90vw;
+                max-height: calc(100vh - 350px);
+
+            }
+        }
+    }
     
 }
-        
+
+@media screen and (max-width:450px) {
+    .user-profile{
+        gap: 1rem;
+
+        .pic-user {
+            border-radius: 24px;
+
+            img{
+           
+               width: 150px;
+               border-radius: 50px;
+            }
+        }
+
+        .description{
+            
+
+            .textArea{
+                padding: 16px;
+                border-radius: 24px;
+
+            }
+        }
+    }
+    
+}
